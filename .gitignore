@@ -1,0 +1,77 @@
+# Environment
+.env
+*.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/*.jsonl
+!logs/.gitkeep
+
+# Docker (challenge outputs)
+challenges/*/tmp/
+
+# Challenge files (user-uploaded, not tracked)
+challenges/archive/
+challenges/archive-1/
+challenges/secure-notes/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Test script
+tests/
+
+# HackL4bs Logs
+logs/*
+
+# HackL4bs DB
+whaley.db
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+data/
+
+# Chall dir
+challenges/*
