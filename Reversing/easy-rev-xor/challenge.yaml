@@ -1,0 +1,9 @@
+id: easy-rev-xor
+name: "XOR Secrets"
+category: reversing
+description: "Someone encoded their flag with a simple XOR cipher and compiled it into a binary. The key is just one byte — shouldn't be hard to find. Download the binary and reverse it."
+
+ports:
+  - 80
+
+timeout: 3600

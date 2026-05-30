@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cookie Monster</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #1a1a2e; color: #eee; font-family: 'Courier New', monospace; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+    .card { background: #16213e; border: 1px solid #0f3460; border-radius: 8px; padding: 40px; max-width: 420px; width: 100%; text-align: center; }
+    h1 { color: #e94560; margin-bottom: 8px; font-size: 1.8rem; }
+    .subtitle { color: #888; margin-bottom: 30px; font-size: 0.9rem; }
+    .badge { display: inline-block; background: #0f3460; color: #aaa; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; margin-bottom: 24px; }
+    .btn { background: #e94560; color: white; border: none; padding: 12px 28px; border-radius: 4px; font-size: 1rem; cursor: pointer; width: 100%; font-family: inherit; }
+    .btn:hover { background: #c73652; }
+    .hint { color: #555; font-size: 0.78rem; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>&#127850; Cookie Monster</h1>
+    <p class="subtitle">Restricted Access Portal</p>
+    <span class="badge">ROLE: GUEST</span>
+    <p style="color:#aaa; margin-bottom:24px; font-size:0.9rem;">
+      Only <strong style="color:#e94560;">admins</strong> can access the secret content.<br>
+      You are currently logged in as a <em>guest</em>.
+    </p>
+    <form method="POST" action="/login">
+      <button class="btn" type="submit">Login as Guest</button>
+    </form>
+    <p class="hint">Tip: browsers let you inspect and modify cookies...</p>
+  </div>
+</body>
+</html>

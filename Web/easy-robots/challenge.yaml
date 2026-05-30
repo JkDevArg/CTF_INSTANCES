@@ -1,0 +1,9 @@
+id: easy-robots
+name: "Forbidden Paths"
+category: web
+description: "This company website tells search engines what NOT to index. Maybe they're hiding something they don't want found?"
+
+ports:
+  - 80
+
+timeout: 3600

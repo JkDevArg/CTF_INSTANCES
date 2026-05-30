@@ -1,0 +1,9 @@
+id: medium-ssti
+name: "Template Trouble"
+category: web
+description: "A developer built a Jinja2 template preview tool for testing. They forgot that letting users control templates is a very bad idea."
+
+ports:
+  - 80
+
+timeout: 3600
