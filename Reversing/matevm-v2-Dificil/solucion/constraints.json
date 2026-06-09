@@ -1,0 +1,328 @@
+{
+  "version": "matevm2-proto-1",
+  "prefix": "H4L{",
+  "suffix": "}",
+  "body_len": 25,
+  "charset": "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_",
+  "initial_state": 3235823838,
+  "constraints": [
+    {
+      "op": "sum3",
+      "idxs": [
+        0,
+        7,
+        16
+      ],
+      "target": 34
+    },
+    {
+      "op": "xor2",
+      "idxs": [
+        22,
+        9
+      ],
+      "target": 34
+    },
+    {
+      "op": "xor2",
+      "idxs": [
+        11,
+        13
+      ],
+      "target": 137
+    },
+    {
+      "op": "tri",
+      "idxs": [
+        24,
+        5,
+        4
+      ],
+      "target": 10
+    },
+    {
+      "op": "xor2",
+      "idxs": [
+        11,
+        23
+      ],
+      "target": 55
+    },
+    {
+      "op": "tri",
+      "idxs": [
+        21,
+        19,
+        16
+      ],
+      "target": 206
+    },
+    {
+      "op": "tri",
+      "idxs": [
+        14,
+        16,
+        23
+      ],
+      "target": 188
+    },
+    {
+      "op": "xor2",
+      "idxs": [
+        4,
+        10
+      ],
+      "target": 242
+    },
+    {
+      "op": "xor2",
+      "idxs": [
+        3,
+        15
+      ],
+      "target": 119
+    },
+    {
+      "op": "sum3",
+      "idxs": [
+        9,
+        7,
+        8
+      ],
+      "target": 111
+    },
+    {
+      "op": "xor2",
+      "idxs": [
+        17,
+        16
+      ],
+      "target": 213
+    },
+    {
+      "op": "sum3",
+      "idxs": [
+        1,
+        22,
+        12
+      ],
+      "target": 74
+    },
+    {
+      "op": "sum3",
+      "idxs": [
+        16,
+        24,
+        9
+      ],
+      "target": 47
+    },
+    {
+      "op": "mix3",
+      "idxs": [
+        11,
+        0,
+        8
+      ],
+      "target": 169
+    },
+    {
+      "op": "xor2",
+      "idxs": [
+        21,
+        0
+      ],
+      "target": 184
+    },
+    {
+      "op": "xor2",
+      "idxs": [
+        14,
+        11
+      ],
+      "target": 243
+    },
+    {
+      "op": "win2",
+      "idxs": [
+        0,
+        5
+      ],
+      "target": 1
+    },
+    {
+      "op": "xor2",
+      "idxs": [
+        11,
+        14
+      ],
+      "target": 194
+    },
+    {
+      "op": "mix3",
+      "idxs": [
+        24,
+        19,
+        0
+      ],
+      "target": 25
+    },
+    {
+      "op": "win2",
+      "idxs": [
+        14,
+        1
+      ],
+      "target": 195
+    },
+    {
+      "op": "mix3",
+      "idxs": [
+        20,
+        22,
+        7
+      ],
+      "target": 117
+    },
+    {
+      "op": "sum3",
+      "idxs": [
+        16,
+        17,
+        15
+      ],
+      "target": 59
+    },
+    {
+      "op": "xor2",
+      "idxs": [
+        1,
+        4
+      ],
+      "target": 154
+    },
+    {
+      "op": "mix3",
+      "idxs": [
+        24,
+        10,
+        0
+      ],
+      "target": 1
+    },
+    {
+      "op": "mix3",
+      "idxs": [
+        2,
+        8,
+        14
+      ],
+      "target": 159
+    },
+    {
+      "op": "xor2",
+      "idxs": [
+        24,
+        1
+      ],
+      "target": 85
+    },
+    {
+      "op": "win2",
+      "idxs": [
+        22,
+        1
+      ],
+      "target": 239
+    },
+    {
+      "op": "tri",
+      "idxs": [
+        5,
+        15,
+        18
+      ],
+      "target": 206
+    },
+    {
+      "op": "tri",
+      "idxs": [
+        2,
+        8,
+        4
+      ],
+      "target": 237
+    },
+    {
+      "op": "tri",
+      "idxs": [
+        6,
+        13,
+        24
+      ],
+      "target": 238
+    },
+    {
+      "op": "win2",
+      "idxs": [
+        13,
+        3
+      ],
+      "target": 162
+    },
+    {
+      "op": "win2",
+      "idxs": [
+        6,
+        20
+      ],
+      "target": 182
+    },
+    {
+      "op": "tri",
+      "idxs": [
+        15,
+        12,
+        3
+      ],
+      "target": 217
+    },
+    {
+      "op": "sum3",
+      "idxs": [
+        1,
+        7,
+        18
+      ],
+      "target": 139
+    }
+  ],
+  "checksum_target": 3334246575,
+  "coverage": [
+    6,
+    6,
+    2,
+    3,
+    4,
+    3,
+    2,
+    4,
+    4,
+    3,
+    2,
+    5,
+    2,
+    3,
+    5,
+    4,
+    6,
+    2,
+    2,
+    2,
+    2,
+    2,
+    4,
+    2,
+    6
+  ]
+}

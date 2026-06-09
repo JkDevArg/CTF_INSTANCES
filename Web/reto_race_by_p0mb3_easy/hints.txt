@@ -1,0 +1,5 @@
+1. Fijate cómo se procesa una transferencia: la pista está en el tiempo entre leer el saldo y guardarlo de nuevo. Si varias peticiones entran al mismo tiempo, pueden pisarse entre sí.
+
+2. Probá generar muchas solicitudes concurrentes hacia el endpoint de transferencia. No alcanza con enviar una sola operación grande: la clave es sincronizar varias al mismo instante.
+
+3. Hay un umbral de conciliación que se activa cuando el desvío contable y la cantidad de transferencias aprobadas superan cierto valor. El script de solve usa 14 workers y transferencias de 100 para forzar ese estado.
