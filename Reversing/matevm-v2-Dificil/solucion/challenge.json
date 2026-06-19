@@ -1,0 +1,5590 @@
+{
+  "version": "matevm2-proto-4",
+  "isa_version": "v2-sharded-1",
+  "envelope": {
+    "prefix": "H4L{",
+    "suffix": "}",
+    "flag_len": 30,
+    "charset": "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_"
+  },
+  "constraints_model": {
+    "version": "matevm2-proto-1",
+    "prefix": "H4L{",
+    "suffix": "}",
+    "body_len": 25,
+    "charset": "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_",
+    "initial_state": 3235823838,
+    "constraints": [
+      {
+        "op": "sum3",
+        "idxs": [
+          0,
+          7,
+          16
+        ],
+        "target": 34
+      },
+      {
+        "op": "xor2",
+        "idxs": [
+          22,
+          9
+        ],
+        "target": 34
+      },
+      {
+        "op": "xor2",
+        "idxs": [
+          11,
+          13
+        ],
+        "target": 137
+      },
+      {
+        "op": "tri",
+        "idxs": [
+          24,
+          5,
+          4
+        ],
+        "target": 10
+      },
+      {
+        "op": "xor2",
+        "idxs": [
+          11,
+          23
+        ],
+        "target": 55
+      },
+      {
+        "op": "tri",
+        "idxs": [
+          21,
+          19,
+          16
+        ],
+        "target": 206
+      },
+      {
+        "op": "tri",
+        "idxs": [
+          14,
+          16,
+          23
+        ],
+        "target": 188
+      },
+      {
+        "op": "xor2",
+        "idxs": [
+          4,
+          10
+        ],
+        "target": 242
+      },
+      {
+        "op": "xor2",
+        "idxs": [
+          3,
+          15
+        ],
+        "target": 119
+      },
+      {
+        "op": "sum3",
+        "idxs": [
+          9,
+          7,
+          8
+        ],
+        "target": 111
+      },
+      {
+        "op": "xor2",
+        "idxs": [
+          17,
+          16
+        ],
+        "target": 213
+      },
+      {
+        "op": "sum3",
+        "idxs": [
+          1,
+          22,
+          12
+        ],
+        "target": 74
+      },
+      {
+        "op": "sum3",
+        "idxs": [
+          16,
+          24,
+          9
+        ],
+        "target": 47
+      },
+      {
+        "op": "mix3",
+        "idxs": [
+          11,
+          0,
+          8
+        ],
+        "target": 169
+      },
+      {
+        "op": "xor2",
+        "idxs": [
+          21,
+          0
+        ],
+        "target": 184
+      },
+      {
+        "op": "xor2",
+        "idxs": [
+          14,
+          11
+        ],
+        "target": 243
+      },
+      {
+        "op": "win2",
+        "idxs": [
+          0,
+          5
+        ],
+        "target": 1
+      },
+      {
+        "op": "xor2",
+        "idxs": [
+          11,
+          14
+        ],
+        "target": 194
+      },
+      {
+        "op": "mix3",
+        "idxs": [
+          24,
+          19,
+          0
+        ],
+        "target": 25
+      },
+      {
+        "op": "win2",
+        "idxs": [
+          14,
+          1
+        ],
+        "target": 195
+      },
+      {
+        "op": "mix3",
+        "idxs": [
+          20,
+          22,
+          7
+        ],
+        "target": 117
+      },
+      {
+        "op": "sum3",
+        "idxs": [
+          16,
+          17,
+          15
+        ],
+        "target": 59
+      },
+      {
+        "op": "xor2",
+        "idxs": [
+          1,
+          4
+        ],
+        "target": 154
+      },
+      {
+        "op": "mix3",
+        "idxs": [
+          24,
+          10,
+          0
+        ],
+        "target": 1
+      },
+      {
+        "op": "mix3",
+        "idxs": [
+          2,
+          8,
+          14
+        ],
+        "target": 159
+      },
+      {
+        "op": "xor2",
+        "idxs": [
+          24,
+          1
+        ],
+        "target": 85
+      },
+      {
+        "op": "win2",
+        "idxs": [
+          22,
+          1
+        ],
+        "target": 239
+      },
+      {
+        "op": "tri",
+        "idxs": [
+          5,
+          15,
+          18
+        ],
+        "target": 206
+      },
+      {
+        "op": "tri",
+        "idxs": [
+          2,
+          8,
+          4
+        ],
+        "target": 237
+      },
+      {
+        "op": "tri",
+        "idxs": [
+          6,
+          13,
+          24
+        ],
+        "target": 238
+      },
+      {
+        "op": "win2",
+        "idxs": [
+          13,
+          3
+        ],
+        "target": 162
+      },
+      {
+        "op": "win2",
+        "idxs": [
+          6,
+          20
+        ],
+        "target": 182
+      },
+      {
+        "op": "tri",
+        "idxs": [
+          15,
+          12,
+          3
+        ],
+        "target": 217
+      },
+      {
+        "op": "sum3",
+        "idxs": [
+          1,
+          7,
+          18
+        ],
+        "target": 139
+      }
+    ],
+    "checksum_target": 3334246575,
+    "coverage": [
+      6,
+      6,
+      2,
+      3,
+      4,
+      3,
+      2,
+      4,
+      4,
+      3,
+      2,
+      5,
+      2,
+      3,
+      5,
+      4,
+      6,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      2,
+      6
+    ]
+  },
+  "keystream_seed": 3237998146,
+  "bytecode_len": 1569,
+  "bytecode_hex": "3dd9a13f4068151bbc938ff307ab3c2d1f02fd28d90dabf568968efb3dc97aec905a8b0041f3e9a56154ec773c54cc555d41afd87d86409f2e0c07f42c1f6e51654f17eea8dad27fbbbc5f7df331ac642af89777da589c2304426b2ee1e0b24df0ac29a39d01c353b6a3165a5aec75ba434747a47284348c4c2213e628ca3e2254920f79caa4b99005b402aad6888dd116d08458e0cc45bec15fc5735a2f0fc7fc59fbf553fc06e9527c4613fc63ae2da64215b15404c4353f6138a14a38418dcbcc8c382055d626443275dbcad6c87aed223ec3f39c5e87279ba6bba31cb7fb6a8029d28167cd84cf9a436d04134ea91724765dd502e6ab453eb81c8989c8edf0327cb2eed102a730e7fd322e9270a84d4568327cff39532859cf62d95d6ccb15b66090614787ba9d2b425c8758c07a64393d4530d5e5361e9736127c9f32c82c9d7cda54aca2629b2002708f76a563086e2d4c4d8e00dda7b8c6553127712f21d1c3ba514bfe46b442bdf6ec3243d7d02f2fc465fb101a75746f6ec82373e5067c2af872ad543d1241f6010b8048aca2153053ce977250feedce2815c9dd91501757d0cc3568df36dc40024bb817b9e93c434904caf998e4ff04ecdcd0a3b97eb4edc676aac346e43712482f702a05ff45b9e61977fe4c5ff84fdb646788a2e3f8af6aa3d31200c1a8e445c0585a50f729dd02e5f500defdd2a9f8be2643defb6cf4886b935e5b5d040359eb3bbf72d4195c4916273a9282db183f7a7cfc663950d33c5770fa6074508a35c5ad22c9ad86f6be8ee88b18b2414fc1a220de6ac96f178e5914ad12ee790809becc19fcf9da6a6c72bf3232e9139c367425ffa3490d1af38819961fbcceb90c8f3345814aae1d290e5a0c932f8506942634555575443be3d0034fe5134142a2aff834d6a875c35719c7815829f1a90c691a442f0237035066480ec835ab2045b1dbc34fa1e4f7488c6aefa5c432273de2e5cbae9269c3901d0a1f57b0afbf1e80c7ee44b3950c5d6b6c6c157cda2466b3b8936370f322c330dc06d3f51d59ee508468147194dbbd748845f0b3d8598fb32b72d360544e6a9a23e5b37c38398cd5c85d1e1524882ffa1b08694f6971782c0825a2efae917a706aab0b3b7a3be092fca8576e929fc52c3178ed7f9041f4f50f93564eeb7d5d6350b86447759593a85d7436617af294cafb8788d3252b9c385dc3326ed2911a8ceeb9f470d278e71c88b6ee5d759749a8c63ecf4c5d0e534b387a108b05001c382ec1dd00f9be341af50d3dd1bf3e4396ec419e5615002697ac8d138ae4b1133d4a8aea27e97cf62a37b11112e44bd1c40306d1af26f94d66aa8ce36a3625d4db005ba29aa1fd2192af96ca008a2b1ae7cb16624a64e5f62271bad094ca85e7fc81d4cd93e8588054c1a01f6dd92262ec1c49f8882da7ff8c95aba01719175b1de93e5392ffc54ebe2db34638af858ad410910546707a982d942fe6aa370b0fa0c42fca729863a97da6c4c483f9c21154590f53d179be41b3579713cdf2dc82d086ae7403cc721da640bbb6be178066581b4a79894d60da0ad358b1b7e693de088dadc827755d6d7313163c74c03d429aa9fde5933654cfbc26b3c451482ed941f7b17c000e3a1e19288df89a329cdae187b68599db1e88a3b31c17a5906a75af36cc0f3f516f64e2b6c8f8c2fc1cdc1432ffe2bf4518e69d8cc293991993de94f7af6cde5d554a323b2c9f7836bb59b6efd1d0ec513c763d81ccc3313f70ca73ee0da473449a907b070e9f61e3529ab8ac40bdf376fcb2553bc1c904a713829f5ab04e1b0b6ecde8d53d205ee85727b59cbe5d3fa0cee8a014f68bdcb68dc3433feb9d671485978653d9754a1609193e3dc81a4a4d64fac9d3e0033e4a6caa28a5adffa8ecabd97b2a9c026e58bed6e4d00d605c39d3c26bdbc19f9b450d3854148617134cce42fbc9c868db0243ed0bce42f6e9518f5f23d1a2463a0f739ab45aef9548d5054b8463796e110a982f026bbb3b01175349f8ba56bf22e65d2fb02bb24f28db7a57cfb0891542978c640955258132ce360b9df5a65afb44a801b3219448b16f5c64be25e7ed56006bfd121a3d6b7d29572ad43c75d4571577633a0e00d634927d9f16b50aab054d83bd18b756892f75ebf8ba1d256eecd8e020fbe83b9bc7cba14cc6f76f3f7705d62b4d8efa19b0c3d9a2bc25b1eb4b",
+  "bytecode_clear_hex": "21dec0dec0051e06004806013406024c06037b061d7d070407050706070707080709070a070b070c070d070e070f0710071107120713071407150716071707180719071a071b071c0408000408010b0802140c04000f04010f04020b05010d04051704180422041900190119021a2208001a08010d0c04000d04010b05000d0405170418042204190019011a2208000f0801110c04000d04010b05000d0405170418048904190019011a8908001c0801090802080c04000c05011405040d04050c050213050510050b0d04050b05030d0405170418040a041900190119021a0a08000f08011b0c04000d04010b05000d0405170418043704190019011a370800190801170802140c04000c05011405040d04050c050213050510050b0d04050b05030d040517041804ce041900190119021ace08001208011408021b0c04000c05011405040d04050c050213050510050b0d04050b05030d040517041804bc041900190119021abc08000808010e0c04000d04010b05000d040517041804f204190019011af20800070801130c04000d04010b05000d0405170418047704190019011a7708000d08010b08020c0c04000f04010f04020b05010d0405170418046f041900190119021a6f0800150801140c04000d04010b05000d040517041804d504190019011ad508000508011a0802100c04000f04010f04020b05010d0405170418044a041900190119021a4a08001408011c08020d0c04000f04010f04020b05010d0405170418042f041900190119021a2f08000f08010408020c0c04001404030c05011405050d04050d04020b05020d040517041804a9041900190119021aa90800190801040c04000d04010b05000d040517041804b804190019011ab808001208010f0c04000d04010b05000d040517041804f304190019011af30800040801090c04001304250c05011305d30f04050b05000f0405170418040104190019011a0108000f0801120c04000d04010b05000d040517041804c204190019011ac208001c0801170802040c04001404030c05011405050d04050d04020b05020d04051704180419041900190119021a190800120801050c04001304250c05011305d30f04050b05000f040517041804c304190019011ac308001808011a08020b0c04001404030c05011405050d04050d04020b05020d04051704180475041900190119021a750800140801150802130c04000f04010f04020b05010d0405170418043b041900190119021a3b0800050801080c04000d04010b05000d0405170418049a04190019011a9a08001c08010e0802040c04001404030c05011405050d04050d04020b05020d04051704180401041900190119021a0108000608010c0802120c04001404030c05011405050d04050d04020b05020d0405170418049f041900190119021a9f08001c0801050c04000d04010b05000d0405170418045504190019011a5508001a0801050c04001304250c05011305d30f04050b05000f040517041804ef04190019011aef0800090801130802160c04000c05011405040d04050c050213050510050b0d04050b05030d040517041804ce041900190119021ace08000608010c0802080c04000c05011405040d04050c050213050510050b0d04050b05030d040517041804ed041900190119021aed08000a08011108021c0c04000c05011405040d04050c050213050510050b0d04050b05030d040517041804ee041900190119021aee0800110801070c04001304250c05011305d30f04050b05000f040517041804a204190019011aa208000a0801180c04001304250c05011305d30f04050b05000f040517041804b604190019011ab60800130801100802070c04000c05011405040d04050c050213050510050b0d04050b05030d040517041804d9041900190119021ad908000508010b0802160c04000f04010f04020b05010d0405170418048b041900190119021a8b1cbebafeca0800041b000800051b000800061b000800071b000800081b000800091b0008000a1b0008000b1b0008000c1b0008000d1b0008000e1b0008000f1b000800101b000800111b000800121b000800131b000800141b000800151b000800161b000800171b000800181b000800191b0008001a1b0008001b1b0008001c1b001daf90bcc60401",
+  "sharding": {
+    "shard_count": 4,
+    "shard_len": 400,
+    "perm": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "coeffs": [
+      [
+        103,
+        303
+      ],
+      [
+        333,
+        107
+      ],
+      [
+        159,
+        389
+      ],
+      [
+        283,
+        132
+      ]
+    ],
+    "shards_hex": [
+      "25363a1c707c1503e0ce0f84a85cfa936cf9abf79c40aefb93578bbbc0fde9c3c1044a15747dad7032e5400cc812ad8cc3eb3252a558d222a24ffd3eb6a1961371a79cdb79e4b1297ad90c5743c5c34e56a9b6760dbe4f8d737a34888903cc7c8d7f81094863b991a618ff68b18f0e6cddbe459fe78aaf608c8eefbe1772067d754fd13d96ec1f0da360c4f20a080d7cba076c432a5dd691259c402da05f067388545e976fb9b0c3ab6b45985a3acd00b106be2fb316e55d431ee63ec142eb2a2f13088cbf6f02b151a9c830c402aba8fc18394b3c20ad5797c5786b225587257a270d43bb46b877de3ce52bccbf86ed58388783199aa2856e2442b91675b9e0fffc0022ac59efafb3a63ed6456efe17b259bbdd8d43c15e55ce10857539b2f41cb841f13485540b3e71255cc8fd8aa1446472c28d3b94d3c2cf06fdc3ab68dc0f413df62c425b8bcbd3f980ae950017cc3616afeecec393412b566a0e02d417938ffe3dc8783b1ac1c649976805122eb70efa1d3dbd3e297253009c4ebeb03bf66f91475d7a5e6ac800d5c3d9f62f0f",
+      "a3f32f3104de15c27299ec514d277cbe61d12eaad592a36d204afc6ae02728d19d4cf36e7d473d6e404f30604df5bab33ac4be020913f84ab4e9fbc9e474c9d443fde8e3b8e43de994fee206e1b4bc08081ea61554302d171d2754cbe75266163d4c1af0a8bb385d6368923dfa37b377302f80578cb16942d0018f3a7213a26e574aebdce51b646176ec4b99ce3fc89a51938fb73003d983ee460417f3934a0053afd68a7200e15da8d33c4ed93b031532b3c67018b0d4a1b329cf7502bc23f954b27b393e5da0f79f5f7b7eb6369da2af7519219a9b0a64d0287df0d4cf8cedfc3f92fcc405974338041c65ca61f51f70e5d54b74c7b3051d7db1fb1928261188e9be9b8ea87a4a6b3fc0041973dc78ccbf0ba565003174548987cd7c7289388188ca94549a5a12ca565a8bda702c61417f07ef6b7cbc71fb7c169212359da8b02f84490bee6bad288286fbb5c155ff73e432501412a3d041a7732c589db34da045be6aec4422a6dbc12a5496b64b2a8c2ea8902cbc2c889ab050ec6b34e2566632af220e4874db595cc53e1667be5e",
+      "9e329f099b1cede618bdee6d0f3cd49c87da72646438c4f881c52d6d002fa27379e66e8c9082b95ff0a4c40217c34d9850d6447d53f8033d9f62d797c800d0555d572d216282556bd1459f0cc313cb76322b3d326c8e6e53abdcc99ff4d2173f6b947a1e5b0156a1e50215e0e9dea2496958b648956a224198ed145acad09f66238aacd957eea06e1a48558046c32ffb624c20a21bd4c8b29317115ca4f3eb265359fc4cddb293c18949a964606332bb8549ed9326d9de0bedb13c454f7ac7da4c2f1eaa74c6468f8c11b942d3a3e628605d644e3daaaef4f8c47545a5e72fe85828ca704ee3124d369a814cea90c3361943a84a1220101ce2beabe78475662a88c3f859485d8dcfde645713c86abf78be66054bb37913ecf6bdbaa9df38632e0553021e7f5be5faa5d81ff69d50ecf6dd27d6f3a2dac994a9d17a901fb41362d06c3f34a7de6af8cf5df835d61afb8892fd36db7c885af4354250570bf5b1db3b2fd11d469ad3e6534968ee530f91c215774601ff9051ff1a194f77cdba8b0cf51a63cde53fe312bd2938f6bacaa3a2",
+      "24db4203d83b4d01e43be7fbe6b82d68dab37c884a76150e2957bcc73f13905a1571c8e84888da3f39386f77375485f722084cfb36f7db8d47e50bffd2b0ffe902255104542ab84a4d26cc5837073e500ac9e8f96f285fdc169ff91af8a60c03361c7ace7cafc370c0caaf9cb688ceaaafc9ce32ccc8394be41d041bacdb76d17abadc1cd9ccdbfc94d320ec155879da75819a310f8064248626b46cb6585d214594545a19d669142faacb27e6ec325a455ddbca19ab1336422bec8ee4b5d286f81a4402eb63ed81ff200eccf353972e00679886443b9b6a0223a18e5013220ae85dd255b42d9619fc3838d0d137759317e0abac325d1735d9d6798759844dacbf3ca8594ff8516792d141cbccad36a495142bc6447070f3ae8c321b453226e819d3a36aa792252b3c9593bf9063d8a56eac92f5f231f1ee240fd597ca4141f7d0b814d50525f8c441345d9caec97400057c758469d559ee97d0ff0d0db661235827e9b76c404248e389756b17c19a14322f1d3d9df529d3f91f41ef80fc51ad8a2550a992c7a04775f537105a334555"
+    ],
+    "decoys_hex": [
+      "28b91ca56eabb37a302f0379fae0b4d7d3a7517010cc51ba9f5043923dfa0a03da8ce17c4b47edf337871e1002ef9b78014f612f285e9938d01d33ce198fc8e4a29f4eb6ebb1e94af9abf5d540ddbb2178a9165283224fc30617da4c707fc56c6ec63069ccd9093bd342a6a7e7e472f99fa6f169ba3adad3ac3f3d4912a19292f323a75d1b00830e2be6bfeabc7fbbe55a23635c751f42efd55da5b8b4b5cbbc3668bf3a02b828494d062c7641303543d42aace4fa9528b96cd7e2f0763dd0869f77493a2c668b009d2b999006815a1fde64c408770e0f0c90cf4c359d3ff2e175ff7c197fe83d742983aaa9e8cf8ff941df906f3809a83db7284d8019cae6f76a073e3a856dc68c75fcf3ad41aaa182f589998ce210feda54aebb467b67ff37212265e939dd72fd6e56dbcc9030c5b745685290797ff50e6d0795e1bed1ebf78e2db383a3a70414c05c307bb7b2c79199f494c89256d735565afc7101bfc1f4b8f27c629302bfeaafba26003227b3530364dff05b31783689193035d483dd1144399127e4e3780f35131359e7cb5c8d",
+      "f7c50f143cb282f7bfd86387c4223513efbb9c5dd9c258576c60e230e135bd322df5ffd72aa037ce0baa57c4ac74913d3916ffe37729d83f87e71cc3e8be88c1018e119e0c552778679d90c241813a6d1310aae87453a6010af1e7108e8ea65a6d7ee29e2a7f8d719929da11b5e401c556d38e1f294ff638e6accaa214233f66ac40b9652e35572097d5bb7f01a109e47bcbee2672f524632fae7d5f4d347a0e5f1073d49aa84ada16752dba74d1b9b58edef1d823b4eec0fa0c9f5f153f894a081dd77dbd5e0a6452115c0cc47540afbc6315e45d31ce3d09861fc90d7c73a8c8abe76382317966c395a5f225b13d61f94cfe7068751ffdf8661955704cd6ec49ea40d0f69c72fb49ac3f7de0bd9e5cd5699247b48aebc6d80aa9c739d2109d5ea58119312476832989d1d6fb68500ad93e31fd65b3908c1c07cc9c9d6a7a18f5231e2393cc902415f6398cd6443f10712b7dd11f505ad02cbd934c668011669797a5e246d8913a1013df2887ea5c35818f0e2985937f6be2f6bc085b378f56b9967678dda8c0e29a8a31d415659c3a"
+    ],
+    "program_len": 1569
+  },
+  "disassembly": [
+    {
+      "pc": 0,
+      "mnemonic": "INITST",
+      "operands": [
+        3235823838
+      ],
+      "size": 5
+    },
+    {
+      "pc": 5,
+      "mnemonic": "CHKLEN",
+      "operands": [
+        30
+      ],
+      "size": 2
+    },
+    {
+      "pc": 7,
+      "mnemonic": "CHKBYTE",
+      "operands": [
+        0,
+        72
+      ],
+      "size": 3
+    },
+    {
+      "pc": 10,
+      "mnemonic": "CHKBYTE",
+      "operands": [
+        1,
+        52
+      ],
+      "size": 3
+    },
+    {
+      "pc": 13,
+      "mnemonic": "CHKBYTE",
+      "operands": [
+        2,
+        76
+      ],
+      "size": 3
+    },
+    {
+      "pc": 16,
+      "mnemonic": "CHKBYTE",
+      "operands": [
+        3,
+        123
+      ],
+      "size": 3
+    },
+    {
+      "pc": 19,
+      "mnemonic": "CHKBYTE",
+      "operands": [
+        29,
+        125
+      ],
+      "size": 3
+    },
+    {
+      "pc": 22,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 24,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        5
+      ],
+      "size": 2
+    },
+    {
+      "pc": 26,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        6
+      ],
+      "size": 2
+    },
+    {
+      "pc": 28,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        7
+      ],
+      "size": 2
+    },
+    {
+      "pc": 30,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        8
+      ],
+      "size": 2
+    },
+    {
+      "pc": 32,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        9
+      ],
+      "size": 2
+    },
+    {
+      "pc": 34,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        10
+      ],
+      "size": 2
+    },
+    {
+      "pc": 36,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        11
+      ],
+      "size": 2
+    },
+    {
+      "pc": 38,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        12
+      ],
+      "size": 2
+    },
+    {
+      "pc": 40,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        13
+      ],
+      "size": 2
+    },
+    {
+      "pc": 42,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        14
+      ],
+      "size": 2
+    },
+    {
+      "pc": 44,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        15
+      ],
+      "size": 2
+    },
+    {
+      "pc": 46,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        16
+      ],
+      "size": 2
+    },
+    {
+      "pc": 48,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        17
+      ],
+      "size": 2
+    },
+    {
+      "pc": 50,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        18
+      ],
+      "size": 2
+    },
+    {
+      "pc": 52,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        19
+      ],
+      "size": 2
+    },
+    {
+      "pc": 54,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        20
+      ],
+      "size": 2
+    },
+    {
+      "pc": 56,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        21
+      ],
+      "size": 2
+    },
+    {
+      "pc": 58,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        22
+      ],
+      "size": 2
+    },
+    {
+      "pc": 60,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        23
+      ],
+      "size": 2
+    },
+    {
+      "pc": 62,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        24
+      ],
+      "size": 2
+    },
+    {
+      "pc": 64,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        25
+      ],
+      "size": 2
+    },
+    {
+      "pc": 66,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        26
+      ],
+      "size": 2
+    },
+    {
+      "pc": 68,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        27
+      ],
+      "size": 2
+    },
+    {
+      "pc": 70,
+      "mnemonic": "CHKCSET",
+      "operands": [
+        28
+      ],
+      "size": 2
+    },
+    {
+      "pc": 72,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 73,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        4
+      ],
+      "size": 3
+    },
+    {
+      "pc": 76,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        11
+      ],
+      "size": 3
+    },
+    {
+      "pc": 79,
+      "mnemonic": "LDB",
+      "operands": [
+        2,
+        20
+      ],
+      "size": 3
+    },
+    {
+      "pc": 82,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 85,
+      "mnemonic": "ADDR",
+      "operands": [
+        4,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 88,
+      "mnemonic": "ADDR",
+      "operands": [
+        4,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 91,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 94,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 97,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 99,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        34
+      ],
+      "size": 3
+    },
+    {
+      "pc": 102,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 103,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 105,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 107,
+      "mnemonic": "FOLD",
+      "operands": [
+        2
+      ],
+      "size": 2
+    },
+    {
+      "pc": 109,
+      "mnemonic": "FINST",
+      "operands": [
+        34
+      ],
+      "size": 2
+    },
+    {
+      "pc": 111,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        26
+      ],
+      "size": 3
+    },
+    {
+      "pc": 114,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        13
+      ],
+      "size": 3
+    },
+    {
+      "pc": 117,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 120,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 123,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 126,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 129,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 131,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        34
+      ],
+      "size": 3
+    },
+    {
+      "pc": 134,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 135,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 137,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 139,
+      "mnemonic": "FINST",
+      "operands": [
+        34
+      ],
+      "size": 2
+    },
+    {
+      "pc": 141,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        15
+      ],
+      "size": 3
+    },
+    {
+      "pc": 144,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        17
+      ],
+      "size": 3
+    },
+    {
+      "pc": 147,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 150,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 153,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 156,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 159,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 161,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        137
+      ],
+      "size": 3
+    },
+    {
+      "pc": 164,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 165,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 167,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 169,
+      "mnemonic": "FINST",
+      "operands": [
+        137
+      ],
+      "size": 2
+    },
+    {
+      "pc": 171,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        28
+      ],
+      "size": 3
+    },
+    {
+      "pc": 174,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        9
+      ],
+      "size": 3
+    },
+    {
+      "pc": 177,
+      "mnemonic": "LDB",
+      "operands": [
+        2,
+        8
+      ],
+      "size": 3
+    },
+    {
+      "pc": 180,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 183,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 186,
+      "mnemonic": "ROLI",
+      "operands": [
+        5,
+        4
+      ],
+      "size": 3
+    },
+    {
+      "pc": 189,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 192,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 195,
+      "mnemonic": "MULI",
+      "operands": [
+        5,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 198,
+      "mnemonic": "ADDI",
+      "operands": [
+        5,
+        11
+      ],
+      "size": 3
+    },
+    {
+      "pc": 201,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 204,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        3
+      ],
+      "size": 3
+    },
+    {
+      "pc": 207,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 210,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 212,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        10
+      ],
+      "size": 3
+    },
+    {
+      "pc": 215,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 216,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 218,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 220,
+      "mnemonic": "FOLD",
+      "operands": [
+        2
+      ],
+      "size": 2
+    },
+    {
+      "pc": 222,
+      "mnemonic": "FINST",
+      "operands": [
+        10
+      ],
+      "size": 2
+    },
+    {
+      "pc": 224,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        15
+      ],
+      "size": 3
+    },
+    {
+      "pc": 227,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        27
+      ],
+      "size": 3
+    },
+    {
+      "pc": 230,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 233,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 236,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 239,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 242,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 244,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        55
+      ],
+      "size": 3
+    },
+    {
+      "pc": 247,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 248,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 250,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 252,
+      "mnemonic": "FINST",
+      "operands": [
+        55
+      ],
+      "size": 2
+    },
+    {
+      "pc": 254,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        25
+      ],
+      "size": 3
+    },
+    {
+      "pc": 257,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        23
+      ],
+      "size": 3
+    },
+    {
+      "pc": 260,
+      "mnemonic": "LDB",
+      "operands": [
+        2,
+        20
+      ],
+      "size": 3
+    },
+    {
+      "pc": 263,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 266,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 269,
+      "mnemonic": "ROLI",
+      "operands": [
+        5,
+        4
+      ],
+      "size": 3
+    },
+    {
+      "pc": 272,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 275,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 278,
+      "mnemonic": "MULI",
+      "operands": [
+        5,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 281,
+      "mnemonic": "ADDI",
+      "operands": [
+        5,
+        11
+      ],
+      "size": 3
+    },
+    {
+      "pc": 284,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 287,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        3
+      ],
+      "size": 3
+    },
+    {
+      "pc": 290,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 293,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 295,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        206
+      ],
+      "size": 3
+    },
+    {
+      "pc": 298,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 299,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 301,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 303,
+      "mnemonic": "FOLD",
+      "operands": [
+        2
+      ],
+      "size": 2
+    },
+    {
+      "pc": 305,
+      "mnemonic": "FINST",
+      "operands": [
+        206
+      ],
+      "size": 2
+    },
+    {
+      "pc": 307,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        18
+      ],
+      "size": 3
+    },
+    {
+      "pc": 310,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        20
+      ],
+      "size": 3
+    },
+    {
+      "pc": 313,
+      "mnemonic": "LDB",
+      "operands": [
+        2,
+        27
+      ],
+      "size": 3
+    },
+    {
+      "pc": 316,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 319,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 322,
+      "mnemonic": "ROLI",
+      "operands": [
+        5,
+        4
+      ],
+      "size": 3
+    },
+    {
+      "pc": 325,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 328,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 331,
+      "mnemonic": "MULI",
+      "operands": [
+        5,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 334,
+      "mnemonic": "ADDI",
+      "operands": [
+        5,
+        11
+      ],
+      "size": 3
+    },
+    {
+      "pc": 337,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 340,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        3
+      ],
+      "size": 3
+    },
+    {
+      "pc": 343,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 346,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 348,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        188
+      ],
+      "size": 3
+    },
+    {
+      "pc": 351,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 352,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 354,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 356,
+      "mnemonic": "FOLD",
+      "operands": [
+        2
+      ],
+      "size": 2
+    },
+    {
+      "pc": 358,
+      "mnemonic": "FINST",
+      "operands": [
+        188
+      ],
+      "size": 2
+    },
+    {
+      "pc": 360,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        8
+      ],
+      "size": 3
+    },
+    {
+      "pc": 363,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        14
+      ],
+      "size": 3
+    },
+    {
+      "pc": 366,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 369,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 372,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 375,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 378,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 380,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        242
+      ],
+      "size": 3
+    },
+    {
+      "pc": 383,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 384,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 386,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 388,
+      "mnemonic": "FINST",
+      "operands": [
+        242
+      ],
+      "size": 2
+    },
+    {
+      "pc": 390,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        7
+      ],
+      "size": 3
+    },
+    {
+      "pc": 393,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        19
+      ],
+      "size": 3
+    },
+    {
+      "pc": 396,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 399,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 402,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 405,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 408,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 410,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        119
+      ],
+      "size": 3
+    },
+    {
+      "pc": 413,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 414,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 416,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 418,
+      "mnemonic": "FINST",
+      "operands": [
+        119
+      ],
+      "size": 2
+    },
+    {
+      "pc": 420,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        13
+      ],
+      "size": 3
+    },
+    {
+      "pc": 423,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        11
+      ],
+      "size": 3
+    },
+    {
+      "pc": 426,
+      "mnemonic": "LDB",
+      "operands": [
+        2,
+        12
+      ],
+      "size": 3
+    },
+    {
+      "pc": 429,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 432,
+      "mnemonic": "ADDR",
+      "operands": [
+        4,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 435,
+      "mnemonic": "ADDR",
+      "operands": [
+        4,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 438,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 441,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 444,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 446,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        111
+      ],
+      "size": 3
+    },
+    {
+      "pc": 449,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 450,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 452,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 454,
+      "mnemonic": "FOLD",
+      "operands": [
+        2
+      ],
+      "size": 2
+    },
+    {
+      "pc": 456,
+      "mnemonic": "FINST",
+      "operands": [
+        111
+      ],
+      "size": 2
+    },
+    {
+      "pc": 458,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        21
+      ],
+      "size": 3
+    },
+    {
+      "pc": 461,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        20
+      ],
+      "size": 3
+    },
+    {
+      "pc": 464,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 467,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 470,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 473,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 476,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 478,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        213
+      ],
+      "size": 3
+    },
+    {
+      "pc": 481,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 482,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 484,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 486,
+      "mnemonic": "FINST",
+      "operands": [
+        213
+      ],
+      "size": 2
+    },
+    {
+      "pc": 488,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 491,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        26
+      ],
+      "size": 3
+    },
+    {
+      "pc": 494,
+      "mnemonic": "LDB",
+      "operands": [
+        2,
+        16
+      ],
+      "size": 3
+    },
+    {
+      "pc": 497,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 500,
+      "mnemonic": "ADDR",
+      "operands": [
+        4,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 503,
+      "mnemonic": "ADDR",
+      "operands": [
+        4,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 506,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 509,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 512,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 514,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        74
+      ],
+      "size": 3
+    },
+    {
+      "pc": 517,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 518,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 520,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 522,
+      "mnemonic": "FOLD",
+      "operands": [
+        2
+      ],
+      "size": 2
+    },
+    {
+      "pc": 524,
+      "mnemonic": "FINST",
+      "operands": [
+        74
+      ],
+      "size": 2
+    },
+    {
+      "pc": 526,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        20
+      ],
+      "size": 3
+    },
+    {
+      "pc": 529,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        28
+      ],
+      "size": 3
+    },
+    {
+      "pc": 532,
+      "mnemonic": "LDB",
+      "operands": [
+        2,
+        13
+      ],
+      "size": 3
+    },
+    {
+      "pc": 535,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 538,
+      "mnemonic": "ADDR",
+      "operands": [
+        4,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 541,
+      "mnemonic": "ADDR",
+      "operands": [
+        4,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 544,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 547,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 550,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 552,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        47
+      ],
+      "size": 3
+    },
+    {
+      "pc": 555,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 556,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 558,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 560,
+      "mnemonic": "FOLD",
+      "operands": [
+        2
+      ],
+      "size": 2
+    },
+    {
+      "pc": 562,
+      "mnemonic": "FINST",
+      "operands": [
+        47
+      ],
+      "size": 2
+    },
+    {
+      "pc": 564,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        15
+      ],
+      "size": 3
+    },
+    {
+      "pc": 567,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        4
+      ],
+      "size": 3
+    },
+    {
+      "pc": 570,
+      "mnemonic": "LDB",
+      "operands": [
+        2,
+        12
+      ],
+      "size": 3
+    },
+    {
+      "pc": 573,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 576,
+      "mnemonic": "ROLI",
+      "operands": [
+        4,
+        3
+      ],
+      "size": 3
+    },
+    {
+      "pc": 579,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 582,
+      "mnemonic": "ROLI",
+      "operands": [
+        5,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 585,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 588,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 591,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 594,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 597,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 599,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        169
+      ],
+      "size": 3
+    },
+    {
+      "pc": 602,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 603,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 605,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 607,
+      "mnemonic": "FOLD",
+      "operands": [
+        2
+      ],
+      "size": 2
+    },
+    {
+      "pc": 609,
+      "mnemonic": "FINST",
+      "operands": [
+        169
+      ],
+      "size": 2
+    },
+    {
+      "pc": 611,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        25
+      ],
+      "size": 3
+    },
+    {
+      "pc": 614,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        4
+      ],
+      "size": 3
+    },
+    {
+      "pc": 617,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 620,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 623,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 626,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 629,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 631,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        184
+      ],
+      "size": 3
+    },
+    {
+      "pc": 634,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 635,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 637,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 639,
+      "mnemonic": "FINST",
+      "operands": [
+        184
+      ],
+      "size": 2
+    },
+    {
+      "pc": 641,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        18
+      ],
+      "size": 3
+    },
+    {
+      "pc": 644,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        15
+      ],
+      "size": 3
+    },
+    {
+      "pc": 647,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 650,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 653,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 656,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 659,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 661,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        243
+      ],
+      "size": 3
+    },
+    {
+      "pc": 664,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 665,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 667,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 669,
+      "mnemonic": "FINST",
+      "operands": [
+        243
+      ],
+      "size": 2
+    },
+    {
+      "pc": 671,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        4
+      ],
+      "size": 3
+    },
+    {
+      "pc": 674,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        9
+      ],
+      "size": 3
+    },
+    {
+      "pc": 677,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 680,
+      "mnemonic": "MULI",
+      "operands": [
+        4,
+        37
+      ],
+      "size": 3
+    },
+    {
+      "pc": 683,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 686,
+      "mnemonic": "MULI",
+      "operands": [
+        5,
+        211
+      ],
+      "size": 3
+    },
+    {
+      "pc": 689,
+      "mnemonic": "ADDR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 692,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 695,
+      "mnemonic": "ADDR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 698,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 700,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 703,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 704,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 706,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 708,
+      "mnemonic": "FINST",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 710,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        15
+      ],
+      "size": 3
+    },
+    {
+      "pc": 713,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        18
+      ],
+      "size": 3
+    },
+    {
+      "pc": 716,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 719,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 722,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 725,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 728,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 730,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        194
+      ],
+      "size": 3
+    },
+    {
+      "pc": 733,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 734,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 736,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 738,
+      "mnemonic": "FINST",
+      "operands": [
+        194
+      ],
+      "size": 2
+    },
+    {
+      "pc": 740,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        28
+      ],
+      "size": 3
+    },
+    {
+      "pc": 743,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        23
+      ],
+      "size": 3
+    },
+    {
+      "pc": 746,
+      "mnemonic": "LDB",
+      "operands": [
+        2,
+        4
+      ],
+      "size": 3
+    },
+    {
+      "pc": 749,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 752,
+      "mnemonic": "ROLI",
+      "operands": [
+        4,
+        3
+      ],
+      "size": 3
+    },
+    {
+      "pc": 755,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 758,
+      "mnemonic": "ROLI",
+      "operands": [
+        5,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 761,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 764,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 767,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 770,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 773,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 775,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        25
+      ],
+      "size": 3
+    },
+    {
+      "pc": 778,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 779,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 781,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 783,
+      "mnemonic": "FOLD",
+      "operands": [
+        2
+      ],
+      "size": 2
+    },
+    {
+      "pc": 785,
+      "mnemonic": "FINST",
+      "operands": [
+        25
+      ],
+      "size": 2
+    },
+    {
+      "pc": 787,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        18
+      ],
+      "size": 3
+    },
+    {
+      "pc": 790,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 793,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 796,
+      "mnemonic": "MULI",
+      "operands": [
+        4,
+        37
+      ],
+      "size": 3
+    },
+    {
+      "pc": 799,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 802,
+      "mnemonic": "MULI",
+      "operands": [
+        5,
+        211
+      ],
+      "size": 3
+    },
+    {
+      "pc": 805,
+      "mnemonic": "ADDR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 808,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 811,
+      "mnemonic": "ADDR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 814,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 816,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        195
+      ],
+      "size": 3
+    },
+    {
+      "pc": 819,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 820,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 822,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 824,
+      "mnemonic": "FINST",
+      "operands": [
+        195
+      ],
+      "size": 2
+    },
+    {
+      "pc": 826,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        24
+      ],
+      "size": 3
+    },
+    {
+      "pc": 829,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        26
+      ],
+      "size": 3
+    },
+    {
+      "pc": 832,
+      "mnemonic": "LDB",
+      "operands": [
+        2,
+        11
+      ],
+      "size": 3
+    },
+    {
+      "pc": 835,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 838,
+      "mnemonic": "ROLI",
+      "operands": [
+        4,
+        3
+      ],
+      "size": 3
+    },
+    {
+      "pc": 841,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 844,
+      "mnemonic": "ROLI",
+      "operands": [
+        5,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 847,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 850,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 853,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 856,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 859,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 861,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        117
+      ],
+      "size": 3
+    },
+    {
+      "pc": 864,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 865,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 867,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 869,
+      "mnemonic": "FOLD",
+      "operands": [
+        2
+      ],
+      "size": 2
+    },
+    {
+      "pc": 871,
+      "mnemonic": "FINST",
+      "operands": [
+        117
+      ],
+      "size": 2
+    },
+    {
+      "pc": 873,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        20
+      ],
+      "size": 3
+    },
+    {
+      "pc": 876,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        21
+      ],
+      "size": 3
+    },
+    {
+      "pc": 879,
+      "mnemonic": "LDB",
+      "operands": [
+        2,
+        19
+      ],
+      "size": 3
+    },
+    {
+      "pc": 882,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 885,
+      "mnemonic": "ADDR",
+      "operands": [
+        4,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 888,
+      "mnemonic": "ADDR",
+      "operands": [
+        4,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 891,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 894,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 897,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 899,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        59
+      ],
+      "size": 3
+    },
+    {
+      "pc": 902,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 903,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 905,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 907,
+      "mnemonic": "FOLD",
+      "operands": [
+        2
+      ],
+      "size": 2
+    },
+    {
+      "pc": 909,
+      "mnemonic": "FINST",
+      "operands": [
+        59
+      ],
+      "size": 2
+    },
+    {
+      "pc": 911,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 914,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        8
+      ],
+      "size": 3
+    },
+    {
+      "pc": 917,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 920,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 923,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 926,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 929,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 931,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        154
+      ],
+      "size": 3
+    },
+    {
+      "pc": 934,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 935,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 937,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 939,
+      "mnemonic": "FINST",
+      "operands": [
+        154
+      ],
+      "size": 2
+    },
+    {
+      "pc": 941,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        28
+      ],
+      "size": 3
+    },
+    {
+      "pc": 944,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        14
+      ],
+      "size": 3
+    },
+    {
+      "pc": 947,
+      "mnemonic": "LDB",
+      "operands": [
+        2,
+        4
+      ],
+      "size": 3
+    },
+    {
+      "pc": 950,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 953,
+      "mnemonic": "ROLI",
+      "operands": [
+        4,
+        3
+      ],
+      "size": 3
+    },
+    {
+      "pc": 956,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 959,
+      "mnemonic": "ROLI",
+      "operands": [
+        5,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 962,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 965,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 968,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 971,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 974,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 976,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 979,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 980,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 982,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 984,
+      "mnemonic": "FOLD",
+      "operands": [
+        2
+      ],
+      "size": 2
+    },
+    {
+      "pc": 986,
+      "mnemonic": "FINST",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 988,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        6
+      ],
+      "size": 3
+    },
+    {
+      "pc": 991,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        12
+      ],
+      "size": 3
+    },
+    {
+      "pc": 994,
+      "mnemonic": "LDB",
+      "operands": [
+        2,
+        18
+      ],
+      "size": 3
+    },
+    {
+      "pc": 997,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1000,
+      "mnemonic": "ROLI",
+      "operands": [
+        4,
+        3
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1003,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1006,
+      "mnemonic": "ROLI",
+      "operands": [
+        5,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1009,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1012,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1015,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1018,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1021,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1023,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        159
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1026,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 1027,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1029,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1031,
+      "mnemonic": "FOLD",
+      "operands": [
+        2
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1033,
+      "mnemonic": "FINST",
+      "operands": [
+        159
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1035,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        28
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1038,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1041,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1044,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1047,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1050,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1053,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1055,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        85
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1058,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 1059,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1061,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1063,
+      "mnemonic": "FINST",
+      "operands": [
+        85
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1065,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        26
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1068,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1071,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1074,
+      "mnemonic": "MULI",
+      "operands": [
+        4,
+        37
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1077,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1080,
+      "mnemonic": "MULI",
+      "operands": [
+        5,
+        211
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1083,
+      "mnemonic": "ADDR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1086,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1089,
+      "mnemonic": "ADDR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1092,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1094,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        239
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1097,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 1098,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1100,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1102,
+      "mnemonic": "FINST",
+      "operands": [
+        239
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1104,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        9
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1107,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        19
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1110,
+      "mnemonic": "LDB",
+      "operands": [
+        2,
+        22
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1113,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1116,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1119,
+      "mnemonic": "ROLI",
+      "operands": [
+        5,
+        4
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1122,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1125,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1128,
+      "mnemonic": "MULI",
+      "operands": [
+        5,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1131,
+      "mnemonic": "ADDI",
+      "operands": [
+        5,
+        11
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1134,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1137,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        3
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1140,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1143,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1145,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        206
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1148,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 1149,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1151,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1153,
+      "mnemonic": "FOLD",
+      "operands": [
+        2
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1155,
+      "mnemonic": "FINST",
+      "operands": [
+        206
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1157,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        6
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1160,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        12
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1163,
+      "mnemonic": "LDB",
+      "operands": [
+        2,
+        8
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1166,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1169,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1172,
+      "mnemonic": "ROLI",
+      "operands": [
+        5,
+        4
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1175,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1178,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1181,
+      "mnemonic": "MULI",
+      "operands": [
+        5,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1184,
+      "mnemonic": "ADDI",
+      "operands": [
+        5,
+        11
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1187,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1190,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        3
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1193,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1196,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1198,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        237
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1201,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 1202,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1204,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1206,
+      "mnemonic": "FOLD",
+      "operands": [
+        2
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1208,
+      "mnemonic": "FINST",
+      "operands": [
+        237
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1210,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        10
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1213,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        17
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1216,
+      "mnemonic": "LDB",
+      "operands": [
+        2,
+        28
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1219,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1222,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1225,
+      "mnemonic": "ROLI",
+      "operands": [
+        5,
+        4
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1228,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1231,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1234,
+      "mnemonic": "MULI",
+      "operands": [
+        5,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1237,
+      "mnemonic": "ADDI",
+      "operands": [
+        5,
+        11
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1240,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1243,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        3
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1246,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1249,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1251,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        238
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1254,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 1255,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1257,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1259,
+      "mnemonic": "FOLD",
+      "operands": [
+        2
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1261,
+      "mnemonic": "FINST",
+      "operands": [
+        238
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1263,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        17
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1266,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        7
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1269,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1272,
+      "mnemonic": "MULI",
+      "operands": [
+        4,
+        37
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1275,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1278,
+      "mnemonic": "MULI",
+      "operands": [
+        5,
+        211
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1281,
+      "mnemonic": "ADDR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1284,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1287,
+      "mnemonic": "ADDR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1290,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1292,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        162
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1295,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 1296,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1298,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1300,
+      "mnemonic": "FINST",
+      "operands": [
+        162
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1302,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        10
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1305,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        24
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1308,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1311,
+      "mnemonic": "MULI",
+      "operands": [
+        4,
+        37
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1314,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1317,
+      "mnemonic": "MULI",
+      "operands": [
+        5,
+        211
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1320,
+      "mnemonic": "ADDR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1323,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1326,
+      "mnemonic": "ADDR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1329,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1331,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        182
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1334,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 1335,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1337,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1339,
+      "mnemonic": "FINST",
+      "operands": [
+        182
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1341,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        19
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1344,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        16
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1347,
+      "mnemonic": "LDB",
+      "operands": [
+        2,
+        7
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1350,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1353,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1356,
+      "mnemonic": "ROLI",
+      "operands": [
+        5,
+        4
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1359,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1362,
+      "mnemonic": "MOV",
+      "operands": [
+        5,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1365,
+      "mnemonic": "MULI",
+      "operands": [
+        5,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1368,
+      "mnemonic": "ADDI",
+      "operands": [
+        5,
+        11
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1371,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1374,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        3
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1377,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1380,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1382,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        217
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1385,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 1386,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1388,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1390,
+      "mnemonic": "FOLD",
+      "operands": [
+        2
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1392,
+      "mnemonic": "FINST",
+      "operands": [
+        217
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1394,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1397,
+      "mnemonic": "LDB",
+      "operands": [
+        1,
+        11
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1400,
+      "mnemonic": "LDB",
+      "operands": [
+        2,
+        22
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1403,
+      "mnemonic": "MOV",
+      "operands": [
+        4,
+        0
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1406,
+      "mnemonic": "ADDR",
+      "operands": [
+        4,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1409,
+      "mnemonic": "ADDR",
+      "operands": [
+        4,
+        2
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1412,
+      "mnemonic": "STATEB",
+      "operands": [
+        5,
+        1
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1415,
+      "mnemonic": "XORR",
+      "operands": [
+        4,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1418,
+      "mnemonic": "TRNC8",
+      "operands": [
+        4
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1420,
+      "mnemonic": "CMPI",
+      "operands": [
+        4,
+        139
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1423,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 1424,
+      "mnemonic": "FOLD",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1426,
+      "mnemonic": "FOLD",
+      "operands": [
+        1
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1428,
+      "mnemonic": "FOLD",
+      "operands": [
+        2
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1430,
+      "mnemonic": "FINST",
+      "operands": [
+        139
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1432,
+      "mnemonic": "CRCINIT",
+      "operands": [
+        3405691582
+      ],
+      "size": 5
+    },
+    {
+      "pc": 1437,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        4
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1440,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1442,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        5
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1445,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1447,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        6
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1450,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1452,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        7
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1455,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1457,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        8
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1460,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1462,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        9
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1465,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1467,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        10
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1470,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1472,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        11
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1475,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1477,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        12
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1480,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1482,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        13
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1485,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1487,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        14
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1490,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1492,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        15
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1495,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1497,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        16
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1500,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1502,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        17
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1505,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1507,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        18
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1510,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1512,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        19
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1515,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1517,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        20
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1520,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1522,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        21
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1525,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1527,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        22
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1530,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1532,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        23
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1535,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1537,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        24
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1540,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1542,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        25
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1545,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1547,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        26
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1550,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1552,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        27
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1555,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1557,
+      "mnemonic": "LDB",
+      "operands": [
+        0,
+        28
+      ],
+      "size": 3
+    },
+    {
+      "pc": 1560,
+      "mnemonic": "CRCFEED",
+      "operands": [
+        0
+      ],
+      "size": 2
+    },
+    {
+      "pc": 1562,
+      "mnemonic": "CRCCHK",
+      "operands": [
+        3334246575
+      ],
+      "size": 5
+    },
+    {
+      "pc": 1567,
+      "mnemonic": "ASRT",
+      "operands": [],
+      "size": 1
+    },
+    {
+      "pc": 1568,
+      "mnemonic": "HALT_OK",
+      "operands": [],
+      "size": 1
+    }
+  ]
+}

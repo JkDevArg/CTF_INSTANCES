@@ -1,0 +1,88 @@
+version: '3.8'
+services:
+
+  pwn-x64:
+    build:
+      context: ./pwn-x64
+    container_name: lab03-pwn-x64
+    ports:
+      - "4444:4444"
+    networks:
+      labnet:
+        ipv4_address: 192.168.103.10
+    security_opt:
+      - seccomp:unconfined
+    cap_add:
+      - SYS_PTRACE
+    restart: unless-stopped
+
+  pwn-arm32:
+    build:
+      context: ./pwn-arm32
+    container_name: lab03-pwn-arm32
+    ports:
+      - "4445:4445"
+    networks:
+      labnet:
+        ipv4_address: 192.168.103.11
+    restart: unless-stopped
+
+  reversing:
+    build:
+      context: ./reversing
+    container_name: lab03-reversing
+    ports:
+      - "4446:4446"
+    networks:
+      labnet:
+        ipv4_address: 192.168.103.20
+    restart: unless-stopped
+
+  ai-gateway:
+    build:
+      context: ./ai-security
+    container_name: lab03-ai
+    ports:
+      - "8181:8080"
+    networks:
+      labnet:
+        ipv4_address: 192.168.103.30
+    environment:
+      AI_MODEL: ${AI_MODEL}
+    restart: unless-stopped
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.0
+    container_name: lab03-elastic
+    environment:
+      - discovery.type=single-node
+      - ELASTIC_PASSWORD=${ELASTIC_PASSWORD}
+      - xpack.security.enabled=true
+    networks:
+      labnet:
+        ipv4_address: 192.168.103.40
+    expose: ["9200"]
+    restart: unless-stopped
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.11.0
+    container_name: lab03-kibana
+    ports:
+      - "5601:5601"
+    networks:
+      labnet:
+        ipv4_address: 192.168.103.41
+    environment:
+      ELASTICSEARCH_HOSTS: "http://elasticsearch:9200"
+      ELASTICSEARCH_PASSWORD: ${ELASTIC_PASSWORD}
+    depends_on: [elasticsearch]
+    restart: unless-stopped
+
+networks:
+  labnet:
+    driver: bridge
+    internal: false
+    ipam:
+      config:
+        - subnet: 192.168.103.0/24
+          gateway: 192.168.103.1

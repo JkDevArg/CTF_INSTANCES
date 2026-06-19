@@ -1,0 +1,17 @@
+id: pwn-nexus-v2
+name: "NEXUS Terminal v2 — fmtstr + bof"
+category: pwn
+description: |
+  NEXUS Corp patched the overflow in v1 and added a stack canary and PIE.
+  But the new developer introduced TWO bugs in the same binary:
+  a format string vulnerability and a stack overflow in separate functions.
+  Chain them to bypass all protections and get a shell.
+
+  Protections: NX=on | PIE=on | Canary=on | RELRO=partial
+  Architecture: x86-64 ELF, Ubuntu 22.04 glibc
+
+ports:
+  - 9999
+  - 80
+
+timeout: 1800

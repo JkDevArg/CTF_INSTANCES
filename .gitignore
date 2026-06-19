@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Environment
 .env
 *.env.local
@@ -76,3 +77,6 @@ data/
 # Chall dir — ignore only runtime artifacts, not challenge source
 challenges/*/dist/
 challenges/labs/
+
+# Other
+.omc/

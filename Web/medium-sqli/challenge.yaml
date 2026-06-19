@@ -1,0 +1,9 @@
+id: medium-sqli
+name: "Admin Only"
+category: web
+description: "A classic employee portal. The admin has the flag but you don't have the password. Maybe the login form isn't as solid as it looks."
+
+ports:
+  - 80
+
+timeout: 3600

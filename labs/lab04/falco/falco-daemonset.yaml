@@ -1,0 +1,41 @@
+# Falco — Runtime security para Kubernetes
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: falco
+  namespace: lab-expert
+  labels:
+    app: falco
+spec:
+  selector:
+    matchLabels:
+      app: falco
+  template:
+    metadata:
+      labels:
+        app: falco
+    spec:
+      hostPID: true
+      hostNetwork: true
+      containers:
+        - name: falco
+          image: falcosecurity/falco-no-driver:0.36.2
+          securityContext:
+            privileged: true
+          args:
+            - /usr/bin/falco
+            - --cri=/run/containerd/containerd.sock
+            - -pk
+          volumeMounts:
+            - mountPath: /etc/falco/rules.d
+              name: custom-rules
+            - mountPath: /run/containerd/containerd.sock
+              name: containerd-sock
+              readOnly: true
+      volumes:
+        - name: custom-rules
+          configMap:
+            name: falco-custom-rules
+        - name: containerd-sock
+          hostPath:
+            path: /run/containerd/containerd.sock

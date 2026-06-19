@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Portal</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #f5f5f5; font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+    .card { background: white; border-radius: 6px; box-shadow: 0 2px 12px rgba(0,0,0,0.15); padding: 40px; max-width: 380px; width: 100%; }
+    .logo { text-align: center; margin-bottom: 28px; }
+    .logo h2 { color: #1a73e8; font-size: 1.5rem; }
+    .logo p { color: #888; font-size: 0.85rem; margin-top: 4px; }
+    label { display: block; color: #444; font-size: 0.85rem; margin-bottom: 4px; margin-top: 14px; }
+    input[type=text], input[type=password] { width: 100%; padding: 10px 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 0.95rem; outline: none; }
+    input:focus { border-color: #1a73e8; }
+    .btn { width: 100%; background: #1a73e8; color: white; border: none; padding: 11px; border-radius: 4px; font-size: 1rem; cursor: pointer; margin-top: 22px; }
+    .btn:hover { background: #1558b0; }
+    .error { background: #fce8e6; color: #c5221f; border: 1px solid #f5c6c4; border-radius: 4px; padding: 10px 14px; margin-bottom: 16px; font-size: 0.85rem; }
+    .footer { text-align: center; color: #aaa; font-size: 0.75rem; margin-top: 28px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">
+      <h2>&#127970; Employee Portal</h2>
+      <p>Authorized personnel only</p>
+    </div>
+    {% if error %}
+    <div class="error">{{ error }}</div>
+    {% endif %}
+    <form method="POST" action="/">
+      <label>Username</label>
+      <input type="text" name="username" placeholder="username" autocomplete="off">
+      <label>Password</label>
+      <input type="password" name="password" placeholder="password">
+      <button class="btn" type="submit">Sign In</button>
+    </form>
+    <p class="footer">Contact IT if you have access issues.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+id: medium-rev-vm
+name: "MiniVM"
+category: reversing
+description: "Someone built a tiny virtual machine to verify their flag. The VM has 3 opcodes and a bytecode program baked in. Reverse the instruction set, trace the bytecode, find the flag."
+
+ports:
+  - 80
+
+timeout: 3600
