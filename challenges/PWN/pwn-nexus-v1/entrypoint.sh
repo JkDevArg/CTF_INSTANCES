@@ -2,7 +2,7 @@
 set -e
 
 # Write the dynamic flag (replaced by Whaley per-user instance)
-echo -n "${FLAG:-H4L{placeholder_flag_here}}" > /home/ctf/flag.txt
+echo -n "${FLAG:-HL4{placeholder_flag_here}}" > /home/ctf/flag.txt
 
 # Prepare download directory (binary + libc only — flag.txt stays out)
 mkdir -p /home/ctf/download

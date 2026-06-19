@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 
 go_src = f'''package main
 

@@ -2,7 +2,7 @@ import os
 import base64
 from PIL import Image, ImageDraw
 
-FLAG = os.environ.get('FLAG', 'H4L{LSB_ESCONDIDO_EN_AZUL}')
+FLAG = os.environ.get('FLAG', 'HL4{LSB_ESCONDIDO_EN_AZUL}')
 KEY = b"mate"
 MARKER = b"::END::"
 

@@ -2,7 +2,7 @@ import os
 import base64
 from PIL import Image, ImageDraw, PngImagePlugin
 
-FLAG = os.environ.get('FLAG', 'H4L{METADATA_NO_ES_BASURA}')
+FLAG = os.environ.get('FLAG', 'HL4{METADATA_NO_ES_BASURA}')
 COMMENT_B64 = base64.b64encode(FLAG.encode()).decode()
 
 

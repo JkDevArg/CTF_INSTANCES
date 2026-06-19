@@ -3,7 +3,7 @@ import urllib.request
 import urllib.error
 from flask import Flask, request, jsonify, render_template_string
 
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 
 PAGE = """<!DOCTYPE html>
 <html lang="es">

@@ -9,7 +9,7 @@ import zlib
 from pathlib import Path
 from PIL import Image
 
-FLAG = "H4L{NO_TODO_RUIDO_ES_AZAR}"
+FLAG = "HL4{NO_TODO_RUIDO_ES_AZAR}"
 MAGIC = b"H4LSTEG2"
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_DIR = ROOT / "source"

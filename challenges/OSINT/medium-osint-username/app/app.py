@@ -3,7 +3,7 @@ import codecs
 from flask import Flask, render_template_string
 
 app = Flask(__name__)
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 
 # ROT13 encode "next platform: twitter | username: elite_jc"
 ENCODED_BIO = codecs.encode("next platform: twitter | username: elite_jc", 'rot13')

@@ -2,7 +2,7 @@ import os, pickle, base64
 from flask import Flask, request, render_template_string, make_response, redirect
 
 app = Flask(__name__)
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 
 with open('/flag.txt', 'w') as f:
     f.write(FLAG + '\n')

@@ -1,7 +1,7 @@
 import os
 import base64
 
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 KEY = "2010"
 
 

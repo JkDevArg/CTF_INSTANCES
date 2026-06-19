@@ -1,7 +1,7 @@
 import os, io, zipfile
 from PIL import Image, ImageDraw
 
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 
 # Create PNG image (boring, nothing to see here)
 img = Image.new('RGB', (600, 300), color=(15, 15, 25))

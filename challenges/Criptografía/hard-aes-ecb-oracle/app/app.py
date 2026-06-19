@@ -6,7 +6,7 @@ from Crypto.Util.Padding import pad
 
 app = Flask(__name__)
 
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}').encode()
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}').encode()
 # Key is fixed for the lifetime of this container instance
 KEY = secrets.token_bytes(16)
 

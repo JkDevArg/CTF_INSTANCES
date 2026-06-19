@@ -1,6 +1,6 @@
 import os
 
-FLAG = os.environ.get('FLAG') or 'CTF{placeholder_flag_here}'
+FLAG = os.environ.get('FLAG') or 'HL4{placeholder_flag_here}'
 
 # VM opcodes:
 #   OP_CHECK = 0x01  args: index(u8), expected(u8)

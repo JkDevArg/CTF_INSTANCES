@@ -2,7 +2,7 @@ from flask import Flask, request, make_response, render_template, redirect, url_
 import os
 
 app = Flask(__name__)
-FLAG = os.environ.get('FLAG') or 'CTF{placeholder_flag_here}'
+FLAG = os.environ.get('FLAG') or 'HL4{placeholder_flag_here}'
 
 
 @app.route('/')

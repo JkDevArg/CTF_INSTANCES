@@ -3,7 +3,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const FLAG = process.env.FLAG || 'CTF{placeholder_flag_here}';
+const FLAG = process.env.FLAG || 'HL4{placeholder_flag_here}';
 
 // Vulnerable deep merge function — no protección contra __proto__
 function deepMerge(target, source) {

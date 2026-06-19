@@ -1,6 +1,6 @@
 import os
 
-FLAG = os.environ.get('FLAG') or 'CTF{placeholder_flag_here}'
+FLAG = os.environ.get('FLAG') or 'HL4{placeholder_flag_here}'
 KEY = 0x1F
 
 encoded = [b ^ KEY for b in FLAG.encode('utf-8')]

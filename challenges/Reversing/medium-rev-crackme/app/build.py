@@ -1,6 +1,6 @@
 import os
 
-FLAG = os.environ.get('FLAG') or 'CTF{placeholder_flag_here}'
+FLAG = os.environ.get('FLAG') or 'HL4{placeholder_flag_here}'
 
 # Encoding: target[i] = (flag[i] * 31 + i * 7) % 256
 # Reverse:  flag[i] = ((target[i] - i*7) * 223) % 256

@@ -3,7 +3,7 @@ import sqlite3
 import os
 
 app = Flask(__name__)
-FLAG = os.environ.get('FLAG') or 'CTF{placeholder_flag_here}'
+FLAG = os.environ.get('FLAG') or 'HL4{placeholder_flag_here}'
 DB_PATH = '/tmp/portal.db'
 
 

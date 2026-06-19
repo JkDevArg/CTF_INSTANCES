@@ -2,7 +2,7 @@ import os
 import qrcode
 from PIL import Image
 
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 
 qr = qrcode.QRCode(
     version=None,

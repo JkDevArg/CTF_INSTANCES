@@ -5,5 +5,5 @@ services:
     ports:
       - "80:80"
     environment:
-      - FLAG=${FLAG:-CTF{placeholder_flag_here}}
+      - FLAG=${FLAG:-HL4{placeholder_flag_here}}
     restart: unless-stopped

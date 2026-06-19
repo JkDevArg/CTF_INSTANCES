@@ -21,7 +21,7 @@ import zlib
 import marshal
 import base64
 
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 
 # ── CAPA 3 (nucleo): logica real ──────────────────────────────────────────────
 # La flag se almacena invertida como string literal

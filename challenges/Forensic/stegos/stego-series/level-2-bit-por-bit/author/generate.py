@@ -5,7 +5,7 @@ import base64
 from pathlib import Path
 from PIL import Image, ImageDraw
 
-FLAG = "H4L{LSB_ESCONDIDO_EN_AZUL}"
+FLAG = "HL4{LSB_ESCONDIDO_EN_AZUL}"
 KEY = b"mate"
 MARKER = b"::END::"
 ROOT = Path(__file__).resolve().parents[1]

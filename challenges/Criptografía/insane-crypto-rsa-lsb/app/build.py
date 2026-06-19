@@ -2,7 +2,7 @@ import os, json
 from math import gcd
 from Crypto.Util.number import getPrime, bytes_to_long, inverse
 
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 
 bits = 512
 while True:

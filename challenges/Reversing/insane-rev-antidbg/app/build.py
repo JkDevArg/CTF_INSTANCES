@@ -7,7 +7,7 @@ import os
 import subprocess
 import shutil
 
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 
 # Generar el array XOR 0x1F
 encoded = [ord(c) ^ 0x1F for c in FLAG]

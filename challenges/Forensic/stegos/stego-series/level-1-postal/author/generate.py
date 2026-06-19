@@ -5,7 +5,7 @@ import base64
 from pathlib import Path
 from PIL import Image, ImageDraw, PngImagePlugin
 
-FLAG = "H4L{METADATA_NO_ES_BASURA}"
+FLAG = "HL4{METADATA_NO_ES_BASURA}"
 COMMENT_B64 = base64.b64encode(FLAG.encode()).decode()
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_DIR = ROOT / "source"

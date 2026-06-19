@@ -2,7 +2,7 @@ import os, secrets, json
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad
 
-FLAG  = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG  = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 KEY   = secrets.token_bytes(16)  # fixed per container lifetime
 IV    = secrets.token_bytes(16)
 

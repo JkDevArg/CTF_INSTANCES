@@ -1,6 +1,6 @@
 import os, subprocess, shutil, tempfile
 
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 
 def run(cmd, cwd=None):
     subprocess.run(cmd, cwd=cwd, check=True, capture_output=True)

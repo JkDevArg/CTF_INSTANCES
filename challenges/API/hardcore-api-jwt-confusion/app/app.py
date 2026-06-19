@@ -6,7 +6,7 @@ from cryptography.hazmat.backends import default_backend
 import jwt  # pyjwt
 from flask import Flask, request, jsonify, render_template_string
 
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 
 # Generate RSA key pair at startup (fixed for container lifetime)
 PRIVATE_KEY = rsa.generate_private_key(

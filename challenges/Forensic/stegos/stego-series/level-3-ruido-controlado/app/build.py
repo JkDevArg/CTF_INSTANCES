@@ -6,7 +6,7 @@ import struct
 import zlib
 from PIL import Image
 
-FLAG = os.environ.get('FLAG', 'H4L{NO_TODO_RUIDO_ES_AZAR}')
+FLAG = os.environ.get('FLAG', 'HL4{NO_TODO_RUIDO_ES_AZAR}')
 MAGIC = b"H4LSTEG2"
 SIZE = (320, 320)
 

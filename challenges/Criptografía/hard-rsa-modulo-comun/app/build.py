@@ -2,7 +2,7 @@ import os
 from Crypto.Util.number import getPrime, bytes_to_long
 from math import gcd
 
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 
 e1, e2 = 3, 65537
 m = bytes_to_long(FLAG.encode())

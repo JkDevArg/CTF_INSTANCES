@@ -6,7 +6,7 @@ from flask import Flask, request, jsonify, render_template_string
 
 app = Flask(__name__)
 
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 
 # ── In-memory user store ──────────────────────────────────────────────────────
 

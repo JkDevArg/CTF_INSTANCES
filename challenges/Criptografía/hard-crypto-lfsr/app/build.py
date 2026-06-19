@@ -1,6 +1,6 @@
 import os, random
 
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 
 # 16-bit Galois LFSR con polinomio conocido
 # Polinomio: x^16 + x^14 + x^13 + x^11 + 1

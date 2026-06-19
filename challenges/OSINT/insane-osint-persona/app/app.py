@@ -4,7 +4,7 @@ import codecs
 from flask import Flask, render_template_string
 
 app = Flask(__name__)
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 
 def get_encoded_flag():
     # Encode: base64 first, then rot13

@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw
 from PIL.PngImagePlugin import PngInfo
 
 app = Flask(__name__)
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 
 def make_image():
     img = Image.new('RGB', (800, 400), color=(15, 15, 25))

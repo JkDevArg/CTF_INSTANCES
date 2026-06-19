@@ -1,6 +1,6 @@
 import os, base64
 
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 
 # Layer 1: base64
 b64 = base64.b64encode(FLAG.encode()).decode()

@@ -6,7 +6,7 @@ Se ejecuta al iniciar el contenedor con la FLAG real del entorno.
 import os
 import sys
 
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 
 # Dividir la flag en dos partes
 mid   = len(FLAG) // 2

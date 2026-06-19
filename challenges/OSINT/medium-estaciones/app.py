@@ -2,7 +2,7 @@ import os
 from flask import Flask, render_template_string, send_from_directory
 
 app = Flask(__name__)
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 
 MAIN = """<!DOCTYPE html><html><head><meta charset="utf-8"><title>Fugitivo — Caso Abierto</title>
 <style>

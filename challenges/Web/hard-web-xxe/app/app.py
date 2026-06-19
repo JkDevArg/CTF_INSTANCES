@@ -3,7 +3,7 @@ from flask import Flask, request, render_template_string
 from lxml import etree
 
 app = Flask(__name__)
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 
 # Write flag to file at startup (XXE reads the file, not env var)
 with open('/flag.txt', 'w') as f:

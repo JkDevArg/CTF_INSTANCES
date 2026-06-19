@@ -1,7 +1,7 @@
 import os
 import py_compile
 
-FLAG = os.environ.get('FLAG') or 'CTF{placeholder_flag_here}'
+FLAG = os.environ.get('FLAG') or 'HL4{placeholder_flag_here}'
 
 # Encode: expected[i] = ord(flag[i]) + i
 # Reverse: flag[i] = chr(expected[i] - i)

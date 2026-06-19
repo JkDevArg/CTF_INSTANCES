@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import os, random, sys, signal
 
-FLAG = os.environ.get('FLAG', 'CTF{placeholder_flag_here}')
+FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
 NUM  = 50
 TIME = 30
 

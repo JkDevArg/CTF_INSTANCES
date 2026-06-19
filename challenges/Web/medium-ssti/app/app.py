@@ -2,7 +2,7 @@ from flask import Flask, request, render_template, render_template_string
 import os
 
 app = Flask(__name__)
-FLAG = os.environ.get('FLAG') or 'CTF{placeholder_flag_here}'
+FLAG = os.environ.get('FLAG') or 'HL4{placeholder_flag_here}'
 
 # Flag exposed in app config so players can reach it via {{config.FLAG}}
 app.config['FLAG'] = FLAG
