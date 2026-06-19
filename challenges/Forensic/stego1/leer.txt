@@ -1,0 +1,9 @@
+la flag del reto es
+H4L{H3X_1S_7H3_R34L_P47H}
+
+el enunciado del esta en datos.txt
+
+y el reto en si es el png flag_perdida.png
+
+para resolverlo es facil hay que pasar el hex de la imagen a archivo *.zip
+y ahi poner la pass, password123 y te brindaria la flag.txt que ahi dentro esta la flag

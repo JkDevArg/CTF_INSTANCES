@@ -1,0 +1,9 @@
+id: easy-cookie-monster
+name: "Cookie Monster"
+category: web
+description: "This site has a strict access control... or does it? Only admins can see the secret. Guests need not apply."
+
+ports:
+  - 80
+
+timeout: 3600

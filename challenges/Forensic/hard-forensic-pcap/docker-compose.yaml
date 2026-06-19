@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  forensic:
+    build: .
+    ports:
+      - "${PORT_80:-8080}:80"
+    environment:
+      - FLAG=${FLAG}
+    restart: unless-stopped
+    mem_limit: 64m
+    cpus: 0.25
+    security_opt:
+      - no-new-privileges:true

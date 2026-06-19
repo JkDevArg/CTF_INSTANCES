@@ -1,0 +1,9 @@
+id: api-easy-headers
+name: "MicroAPI"
+category: api
+description: "Una API interna tiene un endpoint no documentado que solo verifica un encabezado HTTP para 'autenticarse'. Descubre la ruta oculta y envia el encabezado correcto para obtener la flag."
+
+ports:
+  - 80
+
+timeout: 3600

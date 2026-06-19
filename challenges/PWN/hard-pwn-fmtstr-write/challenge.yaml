@@ -1,0 +1,16 @@
+id: hard-pwn-fmtstr-write
+name: "LogSys Corp — Format String Write"
+category: pwn
+description: |
+  Format string vulnerability con escritura arbitraria.
+  Existe una función win() en el binario. La función exit() está en la GOT.
+  Sobrescribe exit@GOT con la dirección de win() — cuando exit() sea llamado,
+  ejecutará win() en su lugar.
+
+  Técnica: Format String → arbitrary write → GOT overwrite
+  Protections: NX=on | PIE=off | Canary=off | RELRO=partial
+
+ports:
+  - 9999
+  - 80
+timeout: 1800

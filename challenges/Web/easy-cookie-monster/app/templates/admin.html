@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cookie Monster - Admin</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #1a1a2e; color: #eee; font-family: 'Courier New', monospace; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+    .card { background: #16213e; border: 1px solid #4CAF50; border-radius: 8px; padding: 40px; max-width: 480px; width: 100%; text-align: center; }
+    h1 { color: #4CAF50; margin-bottom: 8px; }
+    .flag-box { background: #0a1628; border: 2px solid #4CAF50; border-radius: 4px; padding: 18px; margin-top: 24px; font-size: 1.1rem; word-break: break-all; color: #4CAF50; letter-spacing: 1px; }
+    .label { color: #888; font-size: 0.8rem; margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>&#128274; Admin Panel</h1>
+    <p style="color:#aaa; margin-top:10px;">Welcome, Administrator. Access granted.</p>
+    <p class="label" style="margin-top:28px;">SECRET FLAG</p>
+    <div class="flag-box">{{ flag }}</div>
+  </div>
+</body>
+</html>

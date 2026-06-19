@@ -1,0 +1,9 @@
+id: forensic-rifthash
+name: "RiftHash"
+category: forensic
+description: "Un sistema de autenticacion personalizado usa un algoritmo propietario llamado RiftHash. Interceptaste el hash de la contrasena. El algoritmo tambien esta disponible. Crackea el hash para obtener la flag."
+
+ports:
+  - 80
+
+timeout: 3600

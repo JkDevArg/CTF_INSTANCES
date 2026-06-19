@@ -1,0 +1,14 @@
+id: hard-web-xxe
+name: "InvoicePro Corp — XXE Injection"
+category: web
+description: |
+  Un sistema de procesamiento de facturas XML acepta documentos XML del usuario.
+  El parser no está configurado de forma segura.
+  Envía un payload XXE para leer archivos del servidor.
+
+  Técnica: XML External Entity (XXE) Injection
+  Objetivo: leer /flag.txt
+
+ports:
+  - 80
+timeout: 1800

@@ -1,0 +1,12 @@
+id: easy-osint-exif
+name: "MediaCorp — EXIF Metadata"
+category: osint
+description: |
+  Se filtró una imagen del servidor de medios interno de HACKL4BS Corp.
+  Las imágenes digitales guardan más información de la que se ve a simple vista.
+  Analiza todos sus metadatos para encontrar el mensaje oculto.
+
+  Herramientas sugeridas: exiftool, PIL/Pillow, strings
+ports:
+  - 80
+timeout: 1800

@@ -1,0 +1,9 @@
+id: medium-xor-wak
+name: "Wak"
+category: crypto
+description: "Una nota habla de una voz colombiana, un ritmo africano y un canto que unió al mundo. El número no está escrito: está en el momento en que todo ocurrió. Descifra el mensaje."
+
+ports:
+  - 80
+
+timeout: 3600

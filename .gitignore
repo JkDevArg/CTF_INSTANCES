@@ -73,5 +73,6 @@ whaley.db
 *.db-shm
 data/
 
-# Chall dir
-challenges/*
+# Chall dir — ignore only runtime artifacts, not challenge source
+challenges/*/dist/
+challenges/labs/

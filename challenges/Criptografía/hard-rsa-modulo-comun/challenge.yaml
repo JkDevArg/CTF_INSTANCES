@@ -1,0 +1,9 @@
+id: hard-rsa-modulo-comun
+name: "Doble Cifrado"
+category: crypto
+description: "El mismo mensaje fue cifrado dos veces con RSA usando el mismo módulo n pero diferentes exponentes públicos. Ambos cifrados fueron interceptados. Recupera el mensaje original."
+
+ports:
+  - 80
+
+timeout: 3600

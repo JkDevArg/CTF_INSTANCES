@@ -1,0 +1,16 @@
+id: web-race-condition-hard
+name: "Banco HackL4bs Vault — Advanced Race"
+category: web
+description: |
+  Versión endurecida del sistema bancario. Se agregaron controles adicionales
+  pero la condición de carrera persiste en una ventana más pequeña.
+
+  La sincronización es más estricta, el exploit requiere mayor precisión
+  en el timing. Se necesita automatización avanzada.
+
+  Técnica: Race Condition con ventana temporal reducida
+  Dificultad: Hard
+
+ports:
+  - 80
+timeout: 1800

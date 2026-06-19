@@ -1,0 +1,16 @@
+id: insane-pwn-tcache-dup
+name: "AllocatorCorp — Tcache Double-Free"
+category: pwn
+description: |
+  Sistema de notas con un bug de double-free.
+  glibc 2.35 usa tcache con protección de clave — pero hay una filtración.
+  Corrompe el next pointer del tcache para conseguir un chunk arbitrario.
+  Sobrescribe el global function pointer con flag_handler().
+
+  Técnica: Tcache double-free + key leak + arbitrary write via tcache poisoning
+  Protections: NX=on | PIE=off | Canary=off | RELRO=partial
+
+ports:
+  - 9999
+  - 80
+timeout: 1800

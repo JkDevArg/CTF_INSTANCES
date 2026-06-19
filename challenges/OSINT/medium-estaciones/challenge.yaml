@@ -1,0 +1,14 @@
+id: medium-osint-estaciones
+name: "El Fugitivo — Estaciones del Norte"
+category: osint
+description: |
+  Un fugitivo escapó el día en que Lima inauguró nuevas estaciones al norte.
+  Se tomó una foto antes de ir a descansar cerca de allí.
+  Nunca pasa por ningún sitio sin dejar rastro — búscalo en las reseñas.
+
+  Analiza la imagen, identifica la estación, y encuentra el hospedaje más cercano.
+  Técnica: Geolocalización por imagen + OSINT de reseñas locales
+
+ports:
+  - 80
+timeout: 1800

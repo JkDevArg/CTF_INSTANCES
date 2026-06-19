@@ -714,6 +714,16 @@ async def verify_admin_key(
     client_ip = _check_admin_rate_limit(request)
     auth_mode = _settings_auth_mode()
 
+    # Service-to-service bypass: X-Admin-Key is valid in any auth mode.
+    # Used by CTFd plugin and SIEM collector so they don't need a user Bearer token.
+    if x_admin_key and settings.ADMIN_KEY and secrets.compare_digest(str(x_admin_key), str(settings.ADMIN_KEY)):
+        return UserInfo(
+            user_id="service-account",
+            username="service-account",
+            user_type="admin",
+            is_admin=True,
+        )
+
     if auth_mode == AuthMode.CTFD.value:
         if not credentials:
             get_event_logger().log_sync(

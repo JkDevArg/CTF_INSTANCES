@@ -1,0 +1,12 @@
+id: medium-osint-email
+name: "CorpMail — Email Header Investigation"
+category: osint
+description: |
+  Un email corporativo marcado como CONFIDENCIAL fue interceptado.
+  El cuerpo del email parece inocente — pero los headers del correo
+  contienen información codificada que no debería estar ahí.
+
+  Técnica: email header analysis, base64 decoding
+ports:
+  - 80
+timeout: 1800

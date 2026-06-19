@@ -1,0 +1,9 @@
+id: forensic-stego-bit-por-bit
+name: "Ecos Ocultos: Bit por Bit"
+category: forensic
+description: "Un mural digital fue interceptado. Visualmente parece normal. Pero la verdad se esconde en los bits mas pequenos. Extrae el LSB del canal correcto para obtener la flag."
+
+ports:
+  - 80
+
+timeout: 3600

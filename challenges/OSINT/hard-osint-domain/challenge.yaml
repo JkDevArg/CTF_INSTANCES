@@ -1,0 +1,14 @@
+id: hard-osint-domain
+name: "DomainRecon — WHOIS & CT Log Investigation"
+category: osint
+description: |
+  Investiga el dominio corpcorp.local usando las herramientas de reconocimiento disponibles.
+
+  El flag está dividido entre dos fuentes de inteligencia distintas:
+  el registro WHOIS y los logs de Certificate Transparency.
+  Combina la información de ambas fuentes para reconstruirlo.
+
+  Técnica: WHOIS lookup, Certificate Transparency analysis, base64 decoding
+ports:
+  - 80
+timeout: 1800

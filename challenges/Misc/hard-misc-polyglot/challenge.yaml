@@ -1,0 +1,12 @@
+id: hard-misc-polyglot
+name: "Archive Corp — Artifact-7734 (Polyglot)"
+category: misc
+description: |
+  Se filtro un archivo de clasificacion maxima.
+  Parece una imagen. Quizas no lo es solo eso.
+
+  Tecnica: polyglot file — un archivo que es valido como dos formatos distintos.
+
+ports:
+  - 80
+timeout: 1800

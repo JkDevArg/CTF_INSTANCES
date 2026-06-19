@@ -1,0 +1,13 @@
+id: easy-misc-scary
+name: "ScaryNet — Pesadillas Digitales"
+category: misc
+description: |
+  Un GIF animado capturado de la red oscura. Hay una silueta que pesa
+  más que las demás — aisla el frame y analiza sus bits menos significativos.
+
+  Herramientas sugeridas: ffmpeg, zsteg, stegsolve
+  Técnica: GIF frame extraction + LSB steganography
+
+ports:
+  - 80
+timeout: 1800

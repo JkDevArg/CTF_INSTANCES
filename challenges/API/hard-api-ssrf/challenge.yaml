@@ -1,0 +1,15 @@
+id: api-hard-ssrf
+name: WebhookProxy
+category: api
+difficulty: hard
+ports:
+  - 80
+timeout: 3600
+description: >
+  Un servicio de pruebas de webhooks permite al servidor realizar
+  solicitudes HTTP arbitrarias a URLs externas. La configuracion
+  interna del servicio nunca debio ser accesible desde la red publica.
+tags:
+  - ssrf
+  - api
+  - network

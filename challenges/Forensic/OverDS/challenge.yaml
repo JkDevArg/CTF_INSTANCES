@@ -1,0 +1,9 @@
+id: forensic-overd
+name: "OverDS"
+category: forensic
+description: "Una imagen descargada de una fuente sospechosa oculta una ROM de Nintendo DS en su interior. Extráela y ejecútala."
+
+ports:
+  - 80
+
+timeout: 3600

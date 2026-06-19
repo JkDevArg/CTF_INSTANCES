@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  hard-api-ssrf:
+    build: .
+    ports:
+      - "${PORT_80:-8081}:80"
+    environment:
+      - FLAG=${FLAG}
+    mem_limit: 256m
+    cpus: 0.5
+    restart: unless-stopped
