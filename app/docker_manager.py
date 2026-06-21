@@ -337,6 +337,12 @@ class DockerManager:
                     else:
                         return False, f"Maximum instances limit reached ({max_instances})", None
 
+                # In team mode, also enforce per-user instance limit
+                if team_mode:
+                    user_count = self.get_user_instance_count(user_id)
+                    if user_count >= settings.MAX_INSTANCES_PER_USER:
+                        return False, f"Maximum instances limit reached ({settings.MAX_INSTANCES_PER_USER})", None
+
                 # Check if owner already has this challenge running (inside lock)
                 for instance in self.get_owner_instances(owner_id, team_mode):
                     if instance.challenge_id == challenge_id and instance.status == InstanceStatus.RUNNING:
