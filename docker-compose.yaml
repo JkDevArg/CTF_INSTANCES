@@ -1,85 +1,77 @@
-services:
-  redis:
-    image: redis:7-alpine
-    container_name: whaley-redis
-    restart: unless-stopped
-    command: redis-server --appendonly yes
-    volumes:
-      - redis_data:/data
-    networks:
-      - default
-      - ctf-network
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 5s
-      timeout: 3s
-      retries: 5
-
-  instancer:
-    build: .
-    container_name: ctf-instancer
-    env_file: .env
-    depends_on:
-      redis:
-        condition: service_healthy
-    ports:
-      - "${INSTANCER_PORT:-8001}:8001"
-    volumes:
-      # Mount Docker socket for container management
-      - /var/run/docker.sock:/var/run/docker.sock
-      # Mount challenges directory (read-write for Challenge Manager)
-      - ./challenges:/challenges
-      # Mount logs directory
-      - ./logs:/app/logs
-      # Mount data directory for SQLite database
-      - ./data:/app/data
-    environment:
-      - HOST=0.0.0.0
-      - PORT=8001
-      - DEBUG=${DEBUG:-false}
-      - AUTH_MODE=${AUTH_MODE:-none}
-      - CTFD_URL=${CTFD_URL:-https://localhost}
-      - CTFD_API_KEY=${CTFD_API_KEY:-} # CTFd admin token for dynamic flags/sync
-      - ADMIN_KEY=${ADMIN_KEY:-} # Local admin key when AUTH_MODE=none
-      - ADMIN_RATE_LIMIT=${ADMIN_RATE_LIMIT:-150}
-      - TRUSTED_PROXIES=${TRUSTED_PROXIES:-127.0.0.1,::1}
-      - CHALLENGES_DIR=/challenges
-      - PORT_RANGE_START=${PORT_RANGE_START:-10000}
-      - PORT_RANGE_END=${PORT_RANGE_END:-60000}
-      - MAX_INSTANCES_PER_USER=${MAX_INSTANCES_PER_USER:-3}
-      - MAX_INSTANCES_PER_TEAM=${MAX_INSTANCES_PER_TEAM:-5}
-      - INSTANCE_TIMEOUT=${INSTANCE_TIMEOUT:-600}
-      - PUBLIC_HOST=${PUBLIC_HOST:-auto}
-      - DYNAMIC_FLAGS_ENABLED=${DYNAMIC_FLAGS_ENABLED:-false}
-      - FLAG_PREFIX=${FLAG_PREFIX:-FLAG}
-      - TEAM_MODE=${TEAM_MODE:-auto}
-      # Database settings
-      - DATABASE_URL=sqlite+aiosqlite:///./data/whaley.db
-      - DATA_DIR=/app/data
-      # Redis for distributed locking
-      - REDIS_URL=redis://redis:6379/0
-      # Network isolation
-      - NETWORK_ISOLATION_ENABLED=${NETWORK_ISOLATION_ENABLED:-true}
-      - NETWORK_ICC_DISABLED=${NETWORK_ICC_DISABLED:-true}
-      - NETWORK_PREFIX=hackl4bs
-      # Instance Forensics settings
-      - FORENSICS_AUTO_CAPTURE=${FORENSICS_AUTO_CAPTURE:-false}
-      - FORENSICS_MAX_SIZE_MB=${FORENSICS_MAX_SIZE_MB:-5}
-      - FORENSICS_TAIL_LINES=${FORENSICS_TAIL_LINES:-1000}
-      - FORENSICS_RETENTION_HOURS=${FORENSICS_RETENTION_HOURS:-168}
-      - FORENSICS_COMPRESSION=${FORENSICS_COMPRESSION:-true}
-      # Anti-cheat settings
-      - AUTO_DELETE_CHEATS=${AUTO_DELETE_CHEATS:-true}
-      - STOP_INSTANCE_ON_CHEAT=${STOP_INSTANCE_ON_CHEAT:-true}
-      - DISCORD_WEBHOOK_URL=${DISCORD_WEBHOOK_URL:-}
-    restart: unless-stopped
-    networks:
-      - default
-      - ctf-network
-
 networks:
   ctf-network:
     external: true
-
+services:
+  instancer:
+    build: .
+    container_name: ctf-instancer
+    depends_on:
+      redis:
+        condition: service_healthy
+    env_file: .env
+    environment:
+    - HOST=0.0.0.0
+    - PORT=8001
+    - DEBUG=${DEBUG:-false}
+    - AUTH_MODE=${AUTH_MODE:-none}
+    - CTFD_URL=${CTFD_URL:-https://localhost}
+    - CTFD_API_KEY=${CTFD_API_KEY:-}
+    - ADMIN_KEY=${ADMIN_KEY:-}
+    - ADMIN_RATE_LIMIT=${ADMIN_RATE_LIMIT:-150}
+    - TRUSTED_PROXIES=${TRUSTED_PROXIES:-127.0.0.1,::1}
+    - CHALLENGES_DIR=/challenges
+    - PORT_RANGE_START=${PORT_RANGE_START:-10000}
+    - PORT_RANGE_END=${PORT_RANGE_END:-60000}
+    - MAX_INSTANCES_PER_USER=${MAX_INSTANCES_PER_USER:-3}
+    - MAX_INSTANCES_PER_TEAM=${MAX_INSTANCES_PER_TEAM:-5}
+    - INSTANCE_TIMEOUT=${INSTANCE_TIMEOUT:-600}
+    - PUBLIC_HOST=${PUBLIC_HOST:-auto}
+    - DYNAMIC_FLAGS_ENABLED=${DYNAMIC_FLAGS_ENABLED:-false}
+    - FLAG_PREFIX=${FLAG_PREFIX:-FLAG}
+    - TEAM_MODE=${TEAM_MODE:-auto}
+    - DATABASE_URL=sqlite+aiosqlite:///./data/whaley.db
+    - DATA_DIR=/app/data
+    - REDIS_URL=redis://redis:6379/0
+    - NETWORK_ISOLATION_ENABLED=${NETWORK_ISOLATION_ENABLED:-true}
+    - NETWORK_ICC_DISABLED=${NETWORK_ICC_DISABLED:-true}
+    - NETWORK_PREFIX=hackl4bs
+    - FORENSICS_AUTO_CAPTURE=${FORENSICS_AUTO_CAPTURE:-false}
+    - FORENSICS_MAX_SIZE_MB=${FORENSICS_MAX_SIZE_MB:-5}
+    - FORENSICS_TAIL_LINES=${FORENSICS_TAIL_LINES:-1000}
+    - FORENSICS_RETENTION_HOURS=${FORENSICS_RETENTION_HOURS:-168}
+    - FORENSICS_COMPRESSION=${FORENSICS_COMPRESSION:-true}
+    - AUTO_DELETE_CHEATS=${AUTO_DELETE_CHEATS:-true}
+    - STOP_INSTANCE_ON_CHEAT=${STOP_INSTANCE_ON_CHEAT:-true}
+    - DISCORD_WEBHOOK_URL=${DISCORD_WEBHOOK_URL:-}
+    networks:
+    - default
+    - ctf-network
+    ports:
+    - ${INSTANCER_PORT:-8001}:8001
+    restart: unless-stopped
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    - ./challenges:/challenges
+    - ./logs:/app/logs
+    - ./data:/app/data
+    - /tmp:/tmp
+  redis:
+    command: redis-server --appendonly yes
+    container_name: whaley-redis
+    healthcheck:
+      interval: 5s
+      retries: 5
+      test:
+      - CMD
+      - redis-cli
+      - ping
+      timeout: 3s
+    image: redis:7-alpine
+    networks:
+    - default
+    - ctf-network
+    restart: unless-stopped
+    volumes:
+    - redis_data:/data
 volumes:
-  redis_data:
+  redis_data: null
