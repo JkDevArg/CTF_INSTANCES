@@ -1,0 +1,21 @@
+# Robots, please ignore our mess.
+# (Honestly the real inventory of leftover folders is in /README.md)
+
+User-agent: *
+Disallow: /banana_cannon/
+Disallow: /goomba_farm/
+Disallow: /koopa_lounge/
+Disallow: /peach_castle_blueprints/
+Disallow: /spaghetti/
+Disallow: /toad_house/
+Disallow: /yoshi_eggs/
+Disallow: /warp_zone/
+Disallow: /super_secret/
+Disallow: /definitely_not_the_flag/
+Disallow: /this_is_a_trap/
+Disallow: /keep_looking/
+Disallow: /not_here_either/
+Disallow: /flappy_goomba/
+Disallow: /mushroom_kingdom_old/
+
+Sitemap: /sitemap.xml

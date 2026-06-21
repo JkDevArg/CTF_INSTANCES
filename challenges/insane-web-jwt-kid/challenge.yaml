@@ -1,0 +1,16 @@
+id: insane-web-jwt-kid
+name: "AuthCorp — JWT kid Injection"
+category: web
+description: |
+  El servicio JWT usa el parámetro kid del header para cargar el archivo de clave.
+  Si el archivo no existe, usa clave vacía ''.
+
+  Forge un JWT con kid apuntando a un archivo inexistente (o ruta manipulada)
+  y firma con clave vacía para obtener role=admin.
+
+  Técnica: JWT kid parameter injection + empty key signing
+  Herramientas: PyJWT, jwt.io
+
+ports:
+  - 80
+timeout: 1800

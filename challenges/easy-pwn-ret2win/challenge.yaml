@@ -1,0 +1,16 @@
+id: easy-pwn-ret2win
+name: "VAULT Corp — ret2win"
+category: pwn
+description: |
+  Un terminal de autenticación de VAULT Corp está expuesto en el puerto 9999.
+  El binario tiene NX habilitado pero no tiene PIE ni stack canary.
+  Dentro del código existe una función que nunca debería ejecutarse...
+
+  Protections: NX=on | PIE=off | Canary=off | RELRO=partial
+  Architecture: x86-64 ELF, Ubuntu 22.04
+
+ports:
+  - 9999
+  - 80
+
+timeout: 1800

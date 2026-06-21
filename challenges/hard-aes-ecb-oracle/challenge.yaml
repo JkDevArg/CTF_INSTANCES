@@ -1,0 +1,9 @@
+id: hard-aes-ecb-oracle
+name: "La Caja Negra"
+category: crypto
+description: "Un servicio de cifrado acepta tus datos y devuelve el resultado cifrado con AES. Siempre añade un secreto al final antes de cifrar. La clave es fija. El modo, determinista. Extrae el secreto byte a byte."
+
+ports:
+  - 80
+
+timeout: 3600

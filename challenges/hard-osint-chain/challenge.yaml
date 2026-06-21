@@ -1,0 +1,13 @@
+id: hard-osint-chain
+name: "CorpLeak — Multi-Step OSINT Chain"
+category: osint
+description: |
+  Información filtrada sobre CorpCorp circula en múltiples plataformas.
+  Sigue la cadena de pistas desde el blog hasta el paste final.
+
+  Cada fuente lleva a la siguiente — no se puede saltar al final.
+
+  Técnica: Multi-source OSINT, breadcrumb trail analysis
+ports:
+  - 80
+timeout: 1800

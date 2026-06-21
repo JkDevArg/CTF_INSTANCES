@@ -1,0 +1,9 @@
+id: medium-vigenere-sombra
+name: "La Sombra del Cifrado"
+category: crypto
+description: "Los archivos de un agente legendario fueron interceptados. Cifró sus mensajes con un método clásico usando una clave que era también su nombre. Encuentra la clave y descifra el diario."
+
+ports:
+  - 80
+
+timeout: 3600

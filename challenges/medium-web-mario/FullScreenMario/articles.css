@@ -1,0 +1,30 @@
+/* Shared style for the little Mario fan-blog (decoy content). */
+body {
+  margin: 0;
+  background: #5c94fc;
+  color: #1a1a1a;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+}
+header {
+  background: #e52521;
+  color: #fff;
+  padding: 18px 24px;
+  border-bottom: 5px solid #b51a17;
+}
+header a { color: #fff; text-decoration: none; font-weight: bold; }
+nav { background: #fbd000; padding: 8px 24px; font-size: 14px; }
+nav a { color: #6b4e00; margin-right: 16px; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+main {
+  max-width: 720px;
+  margin: 24px auto;
+  background: #fff;
+  padding: 28px 36px;
+  border-radius: 6px;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.15);
+}
+h1 { color: #e52521; margin-top: 0; }
+h2 { color: #2a7d2e; }
+footer { text-align: center; color: #e6efff; font-size: 12px; padding: 20px; }
+.tag { display: inline-block; background: #eee; color: #555; font-size: 12px; padding: 2px 8px; border-radius: 10px; }

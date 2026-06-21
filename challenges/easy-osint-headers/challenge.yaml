@@ -1,0 +1,11 @@
+id: easy-osint-headers
+name: "DataAPI Corp — HTTP Headers Recon"
+category: osint
+description: |
+  El portal de desarrolladores de DataAPI Corp expone endpoints públicos de la API.
+  Los headers HTTP contienen más información de la que aparece en el navegador.
+
+  Técnica: HTTP response header analysis
+ports:
+  - 80
+timeout: 1800

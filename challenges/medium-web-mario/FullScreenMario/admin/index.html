@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Admin Login</title>
+<link href="../articles.css" rel="stylesheet">
+<style>
+  main { max-width: 360px; text-align: center; }
+  input { display:block; width:100%; margin:8px 0; padding:10px; box-sizing:border-box;
+          font-family:inherit; border:2px solid #ccc; border-radius:4px; }
+  button { width:100%; padding:10px; background:#e52521; color:#fff; border:0;
+           border-radius:4px; cursor:pointer; font-weight:bold; }
+  .err { color:#b51a17; font-size:13px; min-height:18px; margin-top:10px; }
+</style>
+</head>
+<body>
+<header><a href="/">&#9664; Mario Fan Blog</a></header>
+<!--
+  INTERNAL ADMIN PANEL  (staging)
+  TODO before launch: rotate creds, the old ones leaked.
+  Legacy dump was moved to /backup/ when we migrated. - m.
+-->
+<main>
+  <h1>Admin</h1>
+  <p style="font-size:13px;color:#777">Staging panel &mdash; authorized personnel only.</p>
+  <form onsubmit="deny(event)">
+    <input type="text" id="u" placeholder="username" autocomplete="off">
+    <input type="password" id="p" placeholder="password" autocomplete="off">
+    <button type="submit">Sign in</button>
+  </form>
+  <div class="err" id="err"></div>
+</main>
+<script>
+  // Looks real. Isn't. Always denies. (No backend here.)
+  var tries = 0;
+  function deny(e) {
+    e.preventDefault();
+    tries++;
+    var msg = document.getElementById("err");
+    msg.textContent = "Access denied.";
+    // The more they try, the more they get trolled.
+    if (tries >= 3) msg.textContent = "Access denied. (Hint: the panel is gone. So is your time.)";
+  }
+</script>
+</body>
+</html>

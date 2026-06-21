@@ -1,0 +1,9 @@
+id: api-easy-exposed
+name: "DataVault"
+category: api
+description: "Una API de perfiles devuelve el objeto de usuario completo, incluyendo campos internos que no deberian exponerse al cliente. Encuentra el campo oculto que contiene la flag."
+
+ports:
+  - 80
+
+timeout: 3600

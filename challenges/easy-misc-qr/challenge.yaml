@@ -1,0 +1,9 @@
+id: easy-misc-qr
+name: "Lab 404 — Código QR"
+category: misc
+description: |
+  Entre los archivos incautados se encontró una imagen misteriosa.
+  Parece un patrón de cuadrados... ¿sabrás leerlo?
+ports:
+  - 80
+timeout: 1800

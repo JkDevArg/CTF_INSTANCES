@@ -1,0 +1,14 @@
+id: insane-rev-obfuscated
+name: "ObfCorp — Python Layers"
+category: reversing
+description: |
+  Un checker Python con múltiples capas de ofuscación:
+  base64 → zlib → marshal → exec anidado × 3.
+
+  Desenvuelve cada capa para llegar al código que verifica la flag.
+  La lógica final es simple — el camino para llegar a ella, no tanto.
+
+  Técnica: Python deobfuscation, marshal bytecode analysis, módulo dis
+ports:
+  - 80
+timeout: 1800

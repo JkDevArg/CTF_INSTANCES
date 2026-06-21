@@ -1,0 +1,12 @@
+id: easy-osint-robots
+name: "CorpSite — Robots.txt Recon"
+category: osint
+description: |
+  El sitio corporativo de una empresa olvidó que robots.txt es público.
+  Un archivo diseñado para decirle a los bots qué NO indexar
+  puede revelar directorios que prefieren mantener ocultos.
+
+  Técnica: robots.txt reconnaissance
+ports:
+  - 80
+timeout: 1800

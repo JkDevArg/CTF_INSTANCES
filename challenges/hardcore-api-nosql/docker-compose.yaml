@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  hardcore-api-nosql:
+    build: .
+    ports:
+      - "${PORT_80:-8083}:80"
+    environment:
+      - FLAG=${FLAG}
+    mem_limit: 256m
+    cpus: 0.5
+    restart: unless-stopped

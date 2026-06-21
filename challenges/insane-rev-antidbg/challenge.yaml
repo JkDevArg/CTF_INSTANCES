@@ -1,0 +1,15 @@
+id: insane-rev-antidbg
+name: "AntiDbg Corp — Anti-Debug Crackme"
+category: reversing
+description: |
+  Un crackme C con protecciones anti-debugging activas:
+  - ptrace self-check: detecta si un debugger está adjunto al proceso
+  - timing check: detecta ejecución paso a paso por latencia en el busy-loop
+
+  La flag está codificada con XOR 0x1F en el segmento .data del binario.
+  Bypasea las protecciones, extrae el array de bytes, y decifra.
+
+  Técnica: Anti-debug bypass (NOP patching, LD_PRELOAD), binary analysis, XOR decode
+ports:
+  - 80
+timeout: 1800

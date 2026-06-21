@@ -1,0 +1,17 @@
+id: web-race-condition-easy
+name: "Banco HackL4bs Vault — Race Condition"
+category: web
+description: |
+  El sistema bancario de HackL4bs Vault tiene una condición de carrera
+  en su endpoint de transferencias. El saldo se verifica y se debita
+  en operaciones separadas — sin bloqueo atómico.
+
+  Envía múltiples transferencias simultáneas antes de que el saldo
+  sea debitado para duplicar fondos y alcanzar el objetivo.
+
+  Técnica: Race Condition / TOCTOU (Time-of-Check-Time-of-Use)
+  Dificultad: Medium
+
+ports:
+  - 80
+timeout: 1800

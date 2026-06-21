@@ -1,0 +1,18 @@
+id: api-hardcore-nosql
+name: DocStore
+category: api
+difficulty: hardcore
+ports:
+  - 80
+timeout: 3600
+description: >
+  Una API de almacenamiento de documentos parsea el JSON de autenticacion
+  directamente como consulta a la base de datos NoSQL. Los operadores de
+  MongoDB como $ne permiten bypassear la autenticacion y acceder al
+  documento del administrador, que contiene la FLAG en su campo secret.
+tags:
+  - nosql
+  - injection
+  - authentication-bypass
+  - api
+  - mongodb

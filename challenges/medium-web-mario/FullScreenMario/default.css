@@ -1,0 +1,92 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #000;
+  color: #fff;
+  font-family: "Press Start";
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+/* 4:3 cabinet, internal resolution 640x480, scaled by JS to fit the viewport */
+#cabinet {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 640px;
+  height: 480px;
+  transform-origin: center center;
+  background: #000;
+  box-shadow: 0 0 0 6px #222, 0 0 40px #000;
+  overflow: hidden;
+}
+
+#game {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  border: 0;
+  background: #5c94fc;
+}
+
+/* ---- Start screen ---- */
+#startscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#title {
+  font-family: "Super Plumber Bros", "Press Start";
+  font-size: 72px;
+  line-height: 96%;
+  color: #e52521;
+  text-shadow: 4px 4px #000, 8px 8px rgba(0,0,0,0.4);
+  letter-spacing: 2px;
+}
+
+#subtitle {
+  margin-top: 14px;
+  font-size: 13px;
+  color: #ffcccc;
+}
+
+#startbtn {
+  margin-top: 42px;
+  padding: 14px 26px;
+  font-family: "Press Start";
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000;
+  background: #fbd000;
+  border: 4px solid #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 0 #b07a00;
+  cursor: pointer;
+  animation: blink 1.1s steps(1) infinite;
+}
+#startbtn:hover { background: #ffe34d; }
+#startbtn:active { transform: translateY(3px); box-shadow: 0 1px 0 #b07a00; }
+
+@keyframes blink {
+  0%, 60% { opacity: 1; }
+  61%, 100% { opacity: 0.45; }
+}
+
+#hint {
+  margin-top: 34px;
+  font-size: 11px;
+  line-height: 200%;
+  color: #9fd0ff;
+}

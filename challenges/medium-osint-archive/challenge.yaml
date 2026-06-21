@@ -1,0 +1,13 @@
+id: medium-osint-archive
+name: "CorpArchive — Web Cache Investigation"
+category: osint
+description: |
+  El sitio corporativo de NovaCorp mantiene un archivo histórico de versiones antiguas.
+  La versión actual no tiene información sensible — pero las versiones archivadas sí.
+
+  Investiga el archivo del sitio para encontrar datos que "ya no existen".
+
+  Técnica: Web archive analysis, historical page enumeration
+ports:
+  - 80
+timeout: 1800

@@ -1,0 +1,9 @@
+id: reversing-overuma
+name: "OverUma"
+category: reversing
+description: "Un binario Windows x86 atribuido a una APT peruana. El análisis dinámico no revela nada. Busca la dirección C2 embebida estáticamente."
+
+ports:
+  - 80
+
+timeout: 3600

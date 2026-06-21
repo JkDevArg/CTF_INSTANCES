@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>API</title>
+<link href="../articles.css" rel="stylesheet">
+<style>
+  main { font-family: Consolas, "Courier New", monospace; }
+  pre { background:#1e1e1e; color:#9cdcfe; padding:16px; border-radius:6px; overflow:auto; }
+  .k { color:#ce9178; }
+</style>
+</head>
+<body>
+<header><a href="/">&#9664; Mario Fan Blog</a></header>
+<!--
+  API v2.
+  v1 is deprecated and removed. The old /api/v1/flag endpoint is gone.
+  Auth: send header  X-Mario-Token: <jwt>
+  dev sample (DO NOT SHIP):
+  eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiZ3Vlc3QiLCJub3RlIjoidGhpcyB0b2tlbiBpcyBmYWtlIn0.aaaaaa
+  legacy flag (rotated, no longer valid): HL4{th1s_1s_n0t_th3_r34l_fl4g}
+-->
+<main>
+  <h1>API</h1>
+  <pre>GET /api/  HTTP/1.1
+
+{
+  "service": "mario-blog-api",
+  "version": "2.1.0",
+  "status": "ok",
+  "auth": "required",
+  "endpoints": {
+    "/api/articles": "list articles",
+    "/api/v1/*": "<span class="k">410 Gone</span> (deprecated)"
+  },
+  "note": "flag delivery was removed from the API in v2. nice try."
+}</pre>
+  <p style="font-size:13px;color:#777">All write endpoints require a valid token.
+  Tokens are issued by an internal service that isn't reachable from here.</p>
+</main>
+<footer>A small fan-made blog. Not affiliated with Nintendo.</footer>
+</body>
+</html>

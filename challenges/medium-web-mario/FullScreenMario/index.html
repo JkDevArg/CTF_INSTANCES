@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <title>Reto CTF 2026 — HackL4bs</title>
+  <link href="default.css" rel="stylesheet">
+  <link href="Fonts/stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- 4:3 arcade cabinet. Everything lives inside this scaled stage. -->
+  <div id="cabinet">
+
+    <!-- The game itself (loaded only after the player presses Start) -->
+    <iframe id="game" title="game"></iframe>
+
+    <!-- Start screen overlay -->
+    <div id="startscreen">
+      <div id="title">RETO<br>CTF<br>2026</div>
+      <div id="subtitle">HackL4bs</div>
+      <button id="startbtn" type="button" onclick="beginGame()">PRESS START</button>
+      <div id="hint">
+        Move: Arrows / WASD<br>
+        Jump: Up / W &nbsp; &middot; &nbsp; Run: Shift<br>
+        Pause: P &nbsp; &middot; &nbsp; Mute: M
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Scale the fixed 640x480 (4:3) cabinet to fit the viewport while keeping ratio.
+    function fitCabinet() {
+      var cab = document.getElementById("cabinet"),
+          scale = Math.min(window.innerWidth / 640, window.innerHeight / 480);
+      cab.style.transform = "translate(-50%, -50%) scale(" + scale + ")";
+    }
+    window.addEventListener("resize", fitCabinet);
+    fitCabinet();
+
+    // Press Start -> load the game and hand it keyboard focus.
+    function beginGame() {
+      var screen = document.getElementById("startscreen"),
+          frame = document.getElementById("game");
+      frame.src = "mario.html";
+      screen.style.display = "none";
+      frame.onload = function() {
+        try { frame.contentWindow.focus(); } catch (e) {}
+      };
+      frame.focus();
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+id: reversing-matevm-v2
+name: "MateVM v2"
+category: reversing
+description: "VM Rust con operaciones con estado continuo y checkpoints de consistencia global. Necesitarás un solucionador de satisfacibilidad para extraer las restricciones."
+
+ports:
+  - 80
+
+timeout: 3600

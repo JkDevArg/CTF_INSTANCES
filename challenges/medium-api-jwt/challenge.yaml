@@ -1,0 +1,9 @@
+id: api-medium-jwt
+name: "AuthCore"
+category: api
+description: "Una API de autenticacion firma sus JWT con un secreto HMAC-SHA256 debil y predecible. Crackea el secreto, forja un token con rol admin y accede al endpoint protegido."
+
+ports:
+  - 80
+
+timeout: 3600

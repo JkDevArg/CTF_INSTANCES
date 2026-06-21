@@ -1,0 +1,16 @@
+id: insane-web-prototype-pollution
+name: "SettingsCorp — Prototype Pollution"
+category: web
+description: |
+  Una API de configuración de usuario tiene una función de merge profundo vulnerable.
+  JavaScript permite contaminar Object.prototype a través de claves especiales.
+
+  Al contaminar Object.prototype.isAdmin = true, todos los objetos heredan
+  la propiedad, incluyendo el objeto de usuario del endpoint /admin/flag.
+
+  Técnica: Prototype Pollution via deep merge
+  Payload: {"settings": {"__proto__": {"isAdmin": true}}}
+
+ports:
+  - 80
+timeout: 1800

@@ -1,0 +1,28 @@
+# No directory browsing — folders must be discovered, not listed.
+Options -Indexes
+
+# Serve index.html for a directory request (so /Xampl3/ loads the level).
+DirectoryIndex index.html
+
+# Let README.md be read in the browser as plain text instead of downloading.
+<FilesMatch "\.md$">
+    ForceType text/plain
+</FilesMatch>
+
+# Block all dotfiles/dotfolders (.git, .gitignore, .htaccess, .gitattributes...).
+# A reachable .git would leak the entire source, including flag.php.
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+RedirectMatch 404 /\.git(/|$)
+
+# Never serve the raw source of server-side, backup or editor temp files.
+# (catches guard.php.bak, flag.php~, .guard.php.swp, db.sql, config.ini, etc.)
+<FilesMatch "(\.(php~|phps|bak|backup|old|orig|save|inc|ini|log|sql|swp|swo|dist|sample)|~)$">
+    Require all denied
+</FilesMatch>
+
+# guard.php is an internal include, not an endpoint — never request it directly.
+<Files "guard.php">
+    Require all denied
+</Files>

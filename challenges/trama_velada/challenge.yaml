@@ -1,0 +1,9 @@
+id: forensic-trama-velada
+name: "Trama Velada"
+category: forensic
+description: "Tráfico TLS 1.3 capturado con su keylog. Descifra los flujos HTTP y extrae el payload oculto."
+
+ports:
+  - 80
+
+timeout: 3600

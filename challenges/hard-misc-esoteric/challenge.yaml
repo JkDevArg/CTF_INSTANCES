@@ -1,0 +1,13 @@
+id: hard-misc-esoteric
+name: "Signal Corps — Transmision Clasificada"
+category: misc
+description: |
+  Una transmision interceptada. Tres capas de ofuscacion.
+  Descifra de afuera hacia adentro.
+
+  Pista de estructura: la transmision fue procesada con tres transformaciones
+  aplicadas secuencialmente. El orden importa. La ultima capa es visible.
+
+ports:
+  - 80
+timeout: 1800

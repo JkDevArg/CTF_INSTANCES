@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>?</title>
+  <link href="../default.css" rel="stylesheet">
+  <link href="../Fonts/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Same 4:3 cabinet as the main game. Drops straight into the chamber. -->
+  <div id="cabinet">
+    <iframe id="game" title="secret" src="game.html"></iframe>
+  </div>
+
+  <script>
+    function fitCabinet() {
+      var cab = document.getElementById("cabinet"),
+          scale = Math.min(window.innerWidth / 640, window.innerHeight / 480);
+      cab.style.transform = "translate(-50%, -50%) scale(" + scale + ")";
+    }
+    window.addEventListener("resize", fitCabinet);
+    fitCabinet();
+    // Hand keyboard focus to the game once it loads.
+    document.getElementById("game").onload = function() {
+      try { this.contentWindow.focus(); } catch (e) {}
+    };
+  </script>
+
+</body>
+</html>

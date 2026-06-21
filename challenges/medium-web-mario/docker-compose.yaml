@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "${PORT_80:-8080}:80"
+    environment:
+      # Whale inyecta una flag por equipo aqui. Si esta presente, el reto la
+      # sirve directamente (el scoreboard la valida). Sin ella, Mario usa su
+      # flag dinamica HMAC por sesion derivada de SERVER_SECRET.
+      - FLAG=${FLAG}
+      - SERVER_SECRET=${SERVER_SECRET:-dev_secret_change_me}
+    restart: unless-stopped
+    mem_limit: 256m
+    cpus: 0.5

@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  crypto:
+    build: .
+    ports:
+      - "${PORT_80:-8080}:80"
+    environment:
+      - FLAG=${FLAG}
+    restart: unless-stopped
+    mem_limit: 128m
+    cpus: 0.5
+    security_opt:
+      - no-new-privileges:true

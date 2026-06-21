@@ -1,0 +1,7 @@
+id: medium-web-mario
+name: "Super Mario"
+category: web
+description: "Un clon web de Super Mario Bros esconde un reto de reconocimiento web. Revisa los archivos del sitio (README.md, robots.txt, sitemap.xml), arma una wordlist y haz directory busting para encontrar el directorio secreto. Una vez dentro, resuelve el nivel oculto para revelar la flag. La flag es dinamica."
+ports:
+  - 80
+timeout: 3600

@@ -1,0 +1,15 @@
+id: insane-crypto-rsa-lsb
+name: "RSACorp — LSB Oracle Attack"
+category: cryptography
+description: |
+  El servidor RSA solo revela un bit de cada descifrado: el bit menos significativo.
+  Eso debería ser seguro... ¿verdad?
+
+  Usando la propiedad multiplicativa de RSA y búsqueda binaria,
+  es posible recuperar el plaintext completo en O(log n) consultas al oráculo.
+
+  Técnica: RSA LSB Oracle Attack
+
+ports:
+  - 80
+timeout: 1800

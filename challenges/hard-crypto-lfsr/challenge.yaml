@@ -1,0 +1,13 @@
+id: hard-crypto-lfsr
+name: "StreamCorp — LFSR Cipher"
+category: cryptography
+description: |
+  Un cifrador de flujo basado en un LFSR de 16 bits fue usado para cifrar un mensaje.
+  El polinomio y la estructura son conocidos. El estado inicial no lo es.
+  Pero el espacio de búsqueda es manejable, y hay texto plano conocido.
+
+  Técnica: Known-plaintext attack + brute force del estado LFSR (2^16 = 65 536 posibilidades)
+
+ports:
+  - 80
+timeout: 1800

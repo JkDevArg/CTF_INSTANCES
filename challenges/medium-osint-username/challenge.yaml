@@ -1,0 +1,13 @@
+id: medium-osint-username
+name: "SocialTrack — Username Chain"
+category: osint
+description: |
+  Un objetivo dejo rastro en multiples plataformas sociales bajo diferentes usernames.
+  Empieza con el perfil de GitHub conocido y sigue la cadena.
+
+  Punto de partida: /github/h4ck3r_jc
+
+  Tecnica: username OSINT, cross-platform correlation
+ports:
+  - 80
+timeout: 1800

@@ -1,0 +1,14 @@
+id: insane-osint-persona
+name: "Project TURING — Full Persona Investigation"
+category: osint
+description: |
+  Identifica y rastrea a un persona de alto valor conocido solo como "Alex Turing".
+  La investigación requiere correlacionar información de múltiples fuentes.
+
+  Cada pista lleva a la siguiente. El dato final está cifrado — las claves
+  están en el perfil del objetivo.
+
+  Técnica: Full persona OSINT, cross-platform correlation, light crypto
+ports:
+  - 80
+timeout: 1800

@@ -1,0 +1,16 @@
+id: hard-web-deserialize
+name: "PickleCorp — Pickle Deserialization"
+category: web
+description: |
+  El portal de empleados de PickleCorp almacena la sesión del usuario
+  en una cookie serializada con Python pickle.
+
+  pickle.loads() ejecuta código arbitrario si el input no es confiable.
+  Forja una cookie maliciosa para ejecutar comandos en el servidor.
+
+  Técnica: Python Pickle Deserialization RCE
+  Objetivo: obtener role='admin' o leer /flag.txt directamente
+
+ports:
+  - 80
+timeout: 1800

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Auto-generated sitemap. Some of these endpoints are... aspirational.
+  If a crawler 404s on half of them, that's a "future content" problem.
+-->
+<urlset xmlns="http://www.sitemap.org/schemas/sitemap/0.9">
+  <url><loc>/index.html</loc><priority>1.0</priority></url>
+  <url><loc>/history/</loc><priority>0.8</priority></url>
+  <url><loc>/characters/</loc><priority>0.8</priority></url>
+  <url><loc>/donkey-kong/</loc><priority>0.8</priority></url>
+  <url><loc>/power-ups/</loc><priority>0.8</priority></url>
+  <url><loc>/trivia/</loc><priority>0.8</priority></url>
+  <url><loc>/about/</loc><priority>0.6</priority></url>
+  <url><loc>/banana_cannon/</loc><priority>0.1</priority></url>
+  <url><loc>/goomba_farm/index.html</loc><priority>0.1</priority></url>
+  <url><loc>/koopa_lounge/menu.html</loc><priority>0.1</priority></url>
+  <url><loc>/peach_castle_blueprints/floor3.pdf</loc><priority>0.1</priority></url>
+  <url><loc>/spaghetti/recipe.txt</loc><priority>0.1</priority></url>
+  <url><loc>/warp_zone/minus_world.html</loc><priority>0.1</priority></url>
+  <url><loc>/super_secret/nope.html</loc><priority>0.1</priority></url>
+  <url><loc>/definitely_not_the_flag/flag.txt</loc><priority>0.1</priority></url>
+  <url><loc>/this_is_a_trap/</loc><priority>0.1</priority></url>
+</urlset>
