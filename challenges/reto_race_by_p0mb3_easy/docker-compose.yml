@@ -19,7 +19,7 @@ services:
       MIN_APPROVED_TRANSFERS: 8
       TRANSFER_DELAY_MIN_US: 80000
       TRANSFER_DELAY_MAX_US: 220000
-      CTF_FLAG: ${CTF_FLAG:-CAMBIAR_EN_PRODUCCION}
+      CTF_FLAG: ${FLAG}
     depends_on:
       db:
         condition: service_healthy

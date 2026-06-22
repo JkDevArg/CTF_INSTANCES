@@ -1,9 +1,0 @@
-id: forensic-stego1
-name: "La Flag Perdida"
-category: forensic
-description: "Una imagen que esconde más de lo que muestra. El investigador dejó instrucciones. Sigue el rastro y reconstruye lo oculto."
-
-ports:
-  - 80
-
-timeout: 3600

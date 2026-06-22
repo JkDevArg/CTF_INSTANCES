@@ -47,14 +47,12 @@ PAGE = """<!DOCTYPE html>
       Cambia su extensión y mira con los ojos correctos.
     </p>
     <a href="/download" class="download-btn">&#11015; Download communities.zip</a>
-
     <div class="flag-form">
       <h3 style="color:#c9d1d9;font-size:0.95rem;margin-bottom:10px;">&#128275; Ingresa la clave oculta</h3>
-      <input type="text" id="answer-input" placeholder="HL4{...}" autocomplete="off" />
+      <input type="text" id="answer-input" placeholder="Ingresa tu respuesta aquí..." autocomplete="off" />
       <button type="button" onclick="submitAnswer()">Verificar</button>
       <div id="flag-result"></div>
     </div>
-
     <div class="info">
       <h3>Hint</h3>
       <p>Las herramientas de diseño gráfico ven lo que los archivadores no pueden.</p>
@@ -76,7 +74,6 @@ PAGE = """<!DOCTYPE html>
         result.style.display = 'block';
         if (d.success) {
           result.className = 'ok';
-          result.textContent = '&#9989; Flag: ' + d.flag;
           result.innerHTML = '&#9989; Flag: <code style="color:#3fb950">' + d.flag + '</code>';
         } else {
           result.className = 'err';
@@ -92,16 +89,13 @@ PAGE = """<!DOCTYPE html>
 </body>
 </html>"""
 
-
 @app.route('/')
 def index():
     return render_template_string(PAGE)
 
-
 @app.route('/download')
 def download():
     return send_file('/app/communities.zip', as_attachment=True, download_name='communities.zip')
-
 
 @app.route('/verify', methods=['POST'])
 def verify():
@@ -109,9 +103,8 @@ def verify():
     answer = (data.get('answer') or '').strip()
     if answer == SECRET_ANSWER:
         flag = os.environ.get('FLAG', 'FLAG_NOT_CONFIGURED')
-        return jsonify({'success': True, 'flag': flag})
+        return jsonify({'success': True,'flag': flag})
     return jsonify({'success': False, 'message': 'Respuesta incorrecta'}), 200
-
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=False)

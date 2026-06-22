@@ -1,9 +1,0 @@
-id: medium-rsa-ez
-name: "RSA Lite"
-category: crypto
-description: "Un desarrollador cifró un mensaje corto con RSA y eligió un exponente pequeño por eficiencia. El módulo es de 2048 bits. ¿Acaso el tamaño del módulo lo hace seguro?"
-
-ports:
-  - 80
-
-timeout: 3600

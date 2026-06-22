@@ -25,7 +25,7 @@ services:
       SETTLEMENT_UNLOCK_DRIFT: 1200
       MIN_DUPLICATE_SETTLEMENTS: 2
       MAX_BATCH_OPERATIONS: 5
-      CTF_FLAG: ${CTF_FLAG:-CAMBIAR_EN_PRODUCCION}
+      CTF_FLAG: ${FLAG}
     depends_on:
       db:
         condition: service_healthy

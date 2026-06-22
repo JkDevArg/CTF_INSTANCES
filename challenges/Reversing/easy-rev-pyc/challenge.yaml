@@ -1,9 +1,0 @@
-id: easy-rev-pyc
-name: "Byte by Byte"
-category: reversing
-description: "A developer wrote a flag checker in Python and distributed the compiled bytecode. They thought removing the source was enough. Download the .pyc and figure out what it's checking."
-
-ports:
-  - 80
-
-timeout: 3600

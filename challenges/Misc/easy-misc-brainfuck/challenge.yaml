@@ -1,9 +1,0 @@
-id: easy-misc-brainfuck
-name: "BrainMatic — Lenguaje Esotérico"
-category: misc
-description: |
-  Un mensaje fue cifrado en el lenguaje de programación esotérico más famoso del mundo.
-  Se incluye el intérprete. Ejecútalo para recuperar el contenido.
-ports:
-  - 80
-timeout: 1800

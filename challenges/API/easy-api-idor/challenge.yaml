@@ -1,9 +1,0 @@
-id: api-easy-idor
-name: "PackTrack"
-category: api
-description: "Un servicio de seguimiento de paquetes no verifica si el pedido consultado pertenece al usuario autenticado. Explota el IDOR para acceder al pedido del administrador."
-
-ports:
-  - 80
-
-timeout: 3600

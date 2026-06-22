@@ -1,9 +1,0 @@
-id: forensic-communities
-name: "Capas Ocultas"
-category: forensic
-description: "Un archivo fue enviado como un simple ZIP. Pero las apariencias engañan. Cambia su extensión y mira con los ojos correctos."
-
-ports:
-  - 80
-
-timeout: 3600

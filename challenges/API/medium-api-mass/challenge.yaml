@@ -1,9 +1,0 @@
-id: api-medium-mass
-name: "UserHub"
-category: api
-description: "Una API de registro acepta el JSON del cliente sin filtrar campos internos. Aprovecha el mass assignment para crear una cuenta con privilegios de administrador y obtener la flag."
-
-ports:
-  - 80
-
-timeout: 3600

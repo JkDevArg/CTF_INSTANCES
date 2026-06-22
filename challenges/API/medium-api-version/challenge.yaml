@@ -1,9 +1,0 @@
-id: api-medium-version
-name: "FleetAPI"
-category: api
-description: "Una API fue actualizada a v2 con autenticacion obligatoria. La version v1 fue 'retirada' pero sigue activa en el servidor. El endpoint de exportacion v1 no requiere autenticacion."
-
-ports:
-  - 80
-
-timeout: 3600

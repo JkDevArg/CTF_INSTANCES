@@ -1,9 +1,0 @@
-id: reversing-matevm-v1
-name: "MateVM"
-category: reversing
-description: "Un binario Rust implementa una VM personalizada para verificar licencias. El bytecode está cifrado con XOR. Descífralo y obtén la licencia válida."
-
-ports:
-  - 80
-
-timeout: 3600

@@ -1,9 +1,0 @@
-id: forensic-stego-postal
-name: "Ecos Ocultos: Postal"
-category: forensic
-description: "Una postal digital fue capturada. A simple vista no revela nada. Pero las imagenes guardan mas de lo que muestran. Analiza los metadatos para encontrar la flag."
-
-ports:
-  - 80
-
-timeout: 3600

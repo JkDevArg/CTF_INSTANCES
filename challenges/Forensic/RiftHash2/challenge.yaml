@@ -1,9 +1,0 @@
-id: forensic-rifthash2
-name: "RiftHash2"
-category: forensic
-description: "El algoritmo mejoro. La sal cambio. El espacio de busqueda es considerablemente mayor esta vez. Interceptaste el hash de la contrasena. El algoritmo tambien esta disponible. Crackea el hash para obtener la flag."
-
-ports:
-  - 80
-
-timeout: 3600

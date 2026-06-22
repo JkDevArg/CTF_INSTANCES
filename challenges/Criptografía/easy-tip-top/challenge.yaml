@@ -1,9 +1,0 @@
-id: easy-tip-top
-name: "Capas Invertidas"
-category: crypto
-description: "El mensaje fue transformado capa por capa, y cada capa fue invertida antes de continuar. Descarga el archivo y deshaz el camino en el orden correcto."
-
-ports:
-  - 80
-
-timeout: 3600

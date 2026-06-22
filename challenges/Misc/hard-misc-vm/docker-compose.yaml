@@ -1,9 +1,0 @@
-version: "3.8"
-services:
-  challenge:
-    build: .
-    ports:
-      - "80:80"
-    environment:
-      - FLAG=${FLAG:-HL4{placeholder_flag_here}}
-    restart: unless-stopped

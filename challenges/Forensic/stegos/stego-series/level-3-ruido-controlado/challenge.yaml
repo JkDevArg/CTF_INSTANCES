@@ -1,9 +1,0 @@
-id: forensic-stego-ruido
-name: "Ecos Ocultos: Ruido Controlado"
-category: forensic
-description: "La imagen parece ruido aleatorio. No lo es. El orden importa mas que el contenido. Y el contenido esta cifrado. Descifra el orden, extrae y descifra para obtener la flag."
-
-ports:
-  - 80
-
-timeout: 3600

@@ -1,9 +1,0 @@
-id: medium-rev-crackme
-name: "Crackme 01"
-category: reversing
-description: "A stripped binary with no symbols. It reads your input and tells you if it's correct. The validation uses a non-trivial per-character transform. Can you reverse the math?"
-
-ports:
-  - 80
-
-timeout: 3600

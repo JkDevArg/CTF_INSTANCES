@@ -1,8 +1,12 @@
 import os
-from flask import Flask, render_template_string, send_from_directory
+from flask import Flask, render_template_string, send_from_directory, request, jsonify
 
 app = Flask(__name__)
-FLAG = os.environ.get('FLAG', 'HL4{placeholder_flag_here}')
+
+SECRET_ANSWER = "HL4{3r05_5p4_n0rt3}
+"  # <-- reemplaza con la flag hardcodeada del reto
+
+PAGE_FLAG = os.environ.get('FLAG', 'FLAG_NOT_CONFIGURED')
 
 MAIN = """<!DOCTYPE html><html><head><meta charset="utf-8"><title>Fugitivo — Caso Abierto</title>
 <style>
@@ -12,6 +16,19 @@ h1{color:#00ff41;border-bottom:1px solid #00ff41;padding-bottom:12px;margin-bott
 .box{border:1px solid #003300;background:#050505;padding:20px;margin-bottom:20px}
 a{color:#00ff41}p{line-height:1.7}
 .hint{color:#009920;font-style:italic}
+.flag-form input[type=text]{
+  width:100%;padding:10px 14px;background:#050505;border:1px solid #003300;
+  border-radius:6px;color:#00ff41;font-family:'Courier New',monospace;
+  font-size:0.95rem;margin-bottom:10px;
+}
+.flag-form button{
+  background:#003300;color:#00ff41;border:1px solid #00ff41;padding:10px 24px;
+  border-radius:6px;font-size:0.95rem;cursor:pointer;font-family:'Courier New',monospace;
+}
+.flag-form button:hover{background:#005500;}
+#flag-result{margin-top:14px;padding:12px 16px;border-radius:6px;font-size:0.9rem;display:none;}
+#flag-result.ok {background:#0d2b1a;border:1px solid #238636;color:#3fb950;}
+#flag-result.err{background:#2b0d0d;border:1px solid #da3633;color:#f85149;}
 </style></head><body>
 <h1>Investigaci&oacute;n Abierta &mdash; El Fugitivo</h1>
 <div class="box">
@@ -43,8 +60,43 @@ Encuentra el &uacute;ltimo rastro que dej&oacute;.</p>
 <li><a href="/maps/metropolitano">Metropolitano Lima &mdash; Ampliaci&oacute;n Norte 2023</a></li>
 </ul>
 </div>
+<div class="box flag-form">
+<h2 style="color:#00cc33;margin-bottom:10px">&#128275; Ingresa la flag</h2>
+<input type="text" id="answer-input" placeholder="HL4{...}" autocomplete="off" spellcheck="false" />
+<button type="button" onclick="submitAnswer()">Verificar</button>
+<div id="flag-result"></div>
+</div>
 <div class="box"><p class="hint">El rastro no siempre est&aacute; en la imagen &mdash; a veces est&aacute; en lo que el sujeto opina.</p></div>
-</body></html>"""
+</body>
+<script>
+  function submitAnswer() {
+    var answer = document.getElementById('answer-input').value.trim();
+    var result = document.getElementById('flag-result');
+    result.style.display = 'none';
+    if (!answer) return;
+    fetch('/verify', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({answer: answer})
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(d){
+      result.style.display = 'block';
+      if (d.success) {
+        result.className = 'ok';
+        result.innerHTML = '&#9989; Flag: <code style="color:#3fb950">' + d.flag + '</code>';
+      } else {
+        result.className = 'err';
+        result.textContent = '&#10060; ' + (d.message || 'Respuesta incorrecta');
+      }
+    })
+    .catch(function(){ result.className='err'; result.style.display='block'; result.textContent='Error de conexión'; });
+  }
+  document.getElementById('answer-input').addEventListener('keydown', function(e){
+    if (e.key === 'Enter') submitAnswer();
+  });
+</script>
+</html>"""
 
 MAPS_HOTEL = """<!DOCTYPE html><html><head><meta charset="utf-8"><title>Hotel Eros Spa — Reseñas</title>
 <style>
@@ -59,7 +111,6 @@ body{background:#121212;color:#e8eaed;font-family:'Google Sans',Arial,sans-serif
 .reviewer{font-weight:600;color:#e8eaed;margin-bottom:4px}
 .date{color:#9aa0a6;font-size:.8rem;margin-bottom:8px}
 .text{color:#e8eaed;line-height:1.6;font-size:.9rem}
-.flag-text{color:#e8eaed;line-height:1.6;font-size:.9rem}
 a{color:#8ab4f8;text-decoration:none}
 .back{padding:16px 24px}
 </style></head><body>
@@ -133,11 +184,19 @@ def foto():
 
 @app.route('/maps/hotel-eros-spa')
 def hotel():
-    return MAPS_HOTEL.replace('{{FLAG}}', FLAG)
+    return MAPS_HOTEL.replace('{{FLAG}}', SECRET_ANSWER)
 
 @app.route('/maps/metropolitano')
 def metro():
     return render_template_string(MAPS_METRO)
+
+@app.route('/verify', methods=['POST'])
+def verify():
+    data = request.get_json(silent=True) or {}
+    answer = (data.get('answer') or '').strip()
+    if answer == SECRET_ANSWER:
+        return jsonify({'success': True, 'flag': PAGE_FLAG})
+    return jsonify({'success': False, 'message': 'Respuesta incorrecta'}), 200
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80)
